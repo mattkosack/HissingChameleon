@@ -1,4 +1,5 @@
 import os
+import re
 from dotenv import load_dotenv
 import discord
 import requests
@@ -19,7 +20,8 @@ async def on_message(message):
     # if message.content.startswith('$hello'):
     #     await message.channel.send('Hello!')
 
-    if any(word in message.content for word in ['Luke', 'luke']):
+    # if any(word in message.content for word in ['Luke', 'luke']):
+    if re.match(r"[Ll]+[\ \t\r\n]*[Uu]+[\ \t\r\n]*[Kk]+[\ \t\r\n]*[Ee]+[\ \t\r\n]*", message.content):
         await message.channel.send('I miss Luke :\\(')
 
 
