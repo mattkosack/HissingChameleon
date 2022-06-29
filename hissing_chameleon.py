@@ -21,7 +21,7 @@ async def on_message(message):
     #     await message.channel.send('Hello!')
 
     # if any(word in message.content for word in ['Luke', 'luke']):
-    if re.search(r"[Ll]+[\ \t\r\n]*[Uu]+[\ \t\r\n]*[Kk]+[\ \t\r\n]*[Ee]+[\ \t\r\n]*", message.content):
+    if re.search(r"[Ll][^ -~]*[Uu][^ -~]*[Kk][^ -~]*[Ee]", message.content):
         await message.channel.send('I miss Luke :\\(')
 
 
