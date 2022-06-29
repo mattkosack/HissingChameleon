@@ -19,7 +19,9 @@ async def on_message(message):
         await message.channel.send('I miss Luke :\\(')
 
     if message.content.startswith('%name'):
-        await message.channel.send('https://audio.pronouncekiwi.com/enNEW1/sukapon')
+        # await message.channel.send('https://audio.pronouncekiwi.com/enNEW1/sukapon')
+        await message.channel.send('[Say my name.]\\(https://audio.pronouncekiwi.com/enNEW1/sukapon\\)')
+
 
 if __name__=="__main__":
     load_dotenv()
