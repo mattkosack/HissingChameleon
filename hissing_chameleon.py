@@ -20,7 +20,8 @@ async def on_message(message):
 
     if message.content.startswith('%name'):
         # await message.channel.send('https://audio.pronouncekiwi.com/enNEW1/sukapon')
-        await message.channel.send('[Say my name.]\\(https://audio.pronouncekiwi.com/enNEW1/sukapon\\)')
+        embed=discord.Embed(title="Say my name", url="https://audio.pronouncekiwi.com/enNEW1/sukapon", description="Say it.")
+        await message.channel.send(embed=embed)
 
 
 if __name__=="__main__":
