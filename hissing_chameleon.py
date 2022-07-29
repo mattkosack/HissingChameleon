@@ -21,6 +21,7 @@ async def on_message(message):
 
     if re.search(r"[Ll][^ -~]*[Uu][^ -~]*[Kk][^ -~]*[Ee]", message.content):
         await message.channel.send('I miss Luke :\\(')
+    await bot.process_commands(message)
 
 @bot.command(name='test')
 async def ping(ctx):
@@ -41,6 +42,7 @@ async def frakes(ctx):
     await ctx.channel.send(get_line('frakes.txt'))
 
 
-load_dotenv()
-token = os.getenv('DISCORD_TOKEN')
-bot.run(token)
+if __name__ == "__main__":
+    load_dotenv()
+    token = os.getenv('DISCORD_TOKEN')
+    bot.run(token)
