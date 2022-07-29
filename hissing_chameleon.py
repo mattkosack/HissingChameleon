@@ -41,7 +41,6 @@ async def frakes(ctx):
     await ctx.channel.send(get_line('frakes.txt'))
 
 
-if __name__ == "__main__":
-    load_dotenv()
-    token = os.getenv('DISCORD_TOKEN')
-    bot.run(token)
+load_dotenv()
+token = os.getenv('DISCORD_TOKEN')
+bot.run(token)
