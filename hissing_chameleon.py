@@ -33,6 +33,7 @@ async def name(ctx):
 
 @bot.command(name="frakes", help="asks you a question")
 async def frakes(ctx):
+    print('getting line')
     await ctx.channel.send(get_line('frakes.txt'))
 
 
