@@ -5,6 +5,7 @@ import discord
 from discord.ext import commands
 from utils import get_line
 import requests
+from PIL import Image
 
 bot = commands.Bot(command_prefix='%')
 
@@ -41,6 +42,13 @@ async def frakes(ctx):
     print('getting line')
     await ctx.channel.send(get_line('frakes.txt'))
 
+@bot.command(name="color", help="Shows the color")
+async def color(ctx, color=None):
+    if color is None:
+        color = random.choice(["red", "green", "blue"])
+    img = Image.new("RGB", (256, 256), color)
+    img.save("color.png")
+    await ctx.channel.send(discord.File("color.png"))
 
 if __name__ == "__main__":
     load_dotenv()
