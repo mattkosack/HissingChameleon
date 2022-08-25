@@ -6,6 +6,7 @@ from discord.ext import commands
 from utils import get_line
 import requests
 from PIL import Image
+import random
 
 bot = commands.Bot(command_prefix='%')
 
