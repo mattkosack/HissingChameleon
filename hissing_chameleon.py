@@ -49,9 +49,9 @@ async def color(ctx, color=None):
     if color is None:
         color = random.choice(["red", "green", "blue"])
     img = Image.new("RGB", (256, 256), color)
-    buf = io.BytesIO()
-    img.save(buf, format="PNG")
-    await ctx.channel.send(discord.File(buf.getvalue(), "color.png"))
+    # buf = io.BytesIO()
+    # img.save(buf, format="PNG")
+    await ctx.channel.send(discord.File(img.tobytes(), "color.png"))
 
 if __name__ == "__main__":
     load_dotenv()
