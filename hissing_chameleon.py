@@ -45,12 +45,11 @@ async def frakes(ctx):
 
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, color=None):
-    print(os.getcwd())
     if color is None:
         color = random.choice(["red", "green", "blue"])
     img = Image.new("RGB", (256, 256), color)
-    img.save("color.png")
-    await ctx.channel.send(discord.File("color.png"))
+    img.save(f"{os.getcwd()}/color.png")
+    await ctx.channel.send(discord.File(f"{os.getcwd()}/color.png"))
 
 if __name__ == "__main__":
     load_dotenv()
