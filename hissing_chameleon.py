@@ -51,7 +51,11 @@ async def color(ctx, color=None):
     img = Image.new("RGB", (256, 256), color)
     # buf = io.BytesIO()
     # img.save(buf, format="PNG")
-    await ctx.channel.send(discord.File(img.tobytes(), "color.png"))
+    with BytesIO() as image_binary:
+        img.save(image_binary, 'PNG')
+        image_binary.seek(0)
+        await ctx.send(file=discord.File(fp=image_binary, filename='image.png)) 
+    # await ctx.channel.send(discord.File(buf, "color.png"))
 
 if __name__ == "__main__":
     load_dotenv()
