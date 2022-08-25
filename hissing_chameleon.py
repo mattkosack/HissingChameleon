@@ -54,7 +54,7 @@ async def color(ctx, color=None):
     with BytesIO() as image_binary:
         img.save(image_binary, 'PNG')
         image_binary.seek(0)
-        await ctx.send(file=discord.File(fp=image_binary, filename='image.png)) 
+        await ctx.send(file=discord.File(fp=image_binary, filename='image.png')) 
     # await ctx.channel.send(discord.File(buf, "color.png"))
 
 if __name__ == "__main__":
