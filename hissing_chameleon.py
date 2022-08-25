@@ -7,6 +7,7 @@ from utils import get_line
 import requests
 from PIL import Image
 import random
+import io
 
 bot = commands.Bot(command_prefix='%')
 
@@ -48,8 +49,9 @@ async def color(ctx, color=None):
     if color is None:
         color = random.choice(["red", "green", "blue"])
     img = Image.new("RGB", (256, 256), color)
-    # img.save(f"{os.getcwd()}/color.png")
-    await ctx.channel.send(discord.File(img, "color.png"))
+    buf = io.BytesIO()
+    img.save(buf, format="PNG")
+    await ctx.channel.send(discord.File(buf.getvalue(), "color.png"))
 
 if __name__ == "__main__":
     load_dotenv()
