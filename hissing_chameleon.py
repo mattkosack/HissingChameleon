@@ -45,6 +45,7 @@ async def frakes(ctx):
 
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, color=None):
+    print(os.getcwd())
     if color is None:
         color = random.choice(["red", "green", "blue"])
     img = Image.new("RGB", (256, 256), color)
