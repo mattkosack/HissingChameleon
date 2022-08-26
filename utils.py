@@ -15,5 +15,7 @@ def get_color_from_text(phrase):
     with open('rgb.txt') as f:
         for line in f:
             line = f.readline()
-            if re.search(r'\b' + phrase + r'\b', " ".join(line.split()[:-1])):
+            desc = " ".join(line.split()[:-1])
+            if re.search(r'\b' + phrase + r'\b', desc):
+                print(desc)
                 return line.split()[-1]
