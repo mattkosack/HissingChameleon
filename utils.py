@@ -26,6 +26,7 @@ def gen_from_xkcd(phrase):
             line = f.readline()
             desc = " ".join(line.split()[:-1])
             if phrase == desc:
+                print("Generating from XKCD")
                 return Image.new("RGB", (256,256), line.split()[-1])
 
 
