@@ -1,5 +1,6 @@
 import requests
 import random
+import re
 
 def get_line(file_name):
     with open(file_name) as f:
@@ -14,5 +15,5 @@ def get_color_from_text(phrase):
     with open('rgb.txt') as f:
         for line in f:
             line = f.readline()
-            if phrase in " ".join(line.split()[:-1]):
+            if re.search(r'\b' + phrase + r'\b', " ".join(line.split()[:-1])):
                 return line.split()[-1]
