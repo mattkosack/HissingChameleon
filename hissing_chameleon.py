@@ -3,7 +3,7 @@ import re
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands
-from utils import get_line, get_color_from_text, gen_from_pil, gen_from_xkcd, gen_from_rand
+from utils import get_line, gen_from_pil, gen_from_xkcd, gen_from_rand
 import requests
 from PIL import Image
 import random
