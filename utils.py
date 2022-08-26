@@ -1,21 +1,37 @@
 import requests
 import random
 import re
+from PIL import Image
 
 def get_line(file_name):
     with open(file_name) as f:
         lines = f.readlines()
     return random.choice(lines)
 
-def get_color_from_text(phrase):
+
+def gen_from_pil(phrase): 
     """
+    Generate an image from PIL defaults.
+    """
+    print("Using PIL defaults")
+    return Image.new("RGB", (256, 256), phrase)
+
+def gen_from_xkcd(phrase):
+    """
+    Generate an image from rgb.txt. (https://blog.xkcd.com/2010/05/03/color-survey-results/)
     Get the first color that matches the phrase.
-    TODO: The issue is this finds the first match, not the best match.
     """
     with open('rgb.txt') as f:
         for line in f:
             line = f.readline()
             desc = " ".join(line.split()[:-1])
             if phrase == desc:
-                print(desc)
-                return line.split()[-1]
+                return Image.new("RGB", (256,256), line.split()[-1])
+
+
+def gen_from_rand(phrase):
+    """
+    Generate an image from a random color.
+    """
+    print("Generating random color")
+    return "#%06x" % random.randint(0, 0xFFFFFF)
