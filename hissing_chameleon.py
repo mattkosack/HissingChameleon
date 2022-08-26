@@ -46,14 +46,15 @@ async def frakes(ctx):
 
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, color=None):
-    for func in [gen_from_pil, gen_from_xkcd, gen_from_rand]:
-        try:
-            if color is None:
+    if color is not None:
+        for func in [gen_from_pil, gen_from_xkcd, gen_from_rand]:
+            try:
+                img = func(color)
+                break
+            except:
                 continue
-            img = func(color)
-            break
-        except:
-            continue
+    else:
+        img = gen_from_rand()
 
     with io.BytesIO() as image_binary:
         img.save(image_binary, 'PNG')
