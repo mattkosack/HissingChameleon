@@ -47,15 +47,13 @@ async def frakes(ctx):
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, color=None):
     if color is None:
-        color = random.choice(["red", "green", "blue"])
+        color = "%06x" % random.randint(0, 0xFFFFFF)
     img = Image.new("RGB", (256, 256), color)
-    # buf = io.BytesIO()
-    # img.save(buf, format="PNG")
     with io.BytesIO() as image_binary:
         img.save(image_binary, 'PNG')
         image_binary.seek(0)
-        await ctx.send(file=discord.File(fp=image_binary, filename='image.png')) 
-    # await ctx.channel.send(discord.File(buf, "color.png"))
+        await ctx.send(file=discord.File(fp=image_binary, filename=f'{color}.png')) 
+
 
 if __name__ == "__main__":
     load_dotenv()
