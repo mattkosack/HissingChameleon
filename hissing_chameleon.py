@@ -47,7 +47,7 @@ async def frakes(ctx):
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, color=None):
     if color is None:
-        color = "%06x" % random.randint(0, 0xFFFFFF)
+        color = "#%06x" % random.randint(0, 0xFFFFFF)
     print(color)
     img = Image.new("RGB", (256, 256), color)
     with io.BytesIO() as image_binary:
