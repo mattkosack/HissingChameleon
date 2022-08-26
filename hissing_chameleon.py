@@ -46,13 +46,13 @@ async def frakes(ctx):
 
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, color=None):
+    # Not sure how to write this better, I know it's ugly.
     if color is not None:
-        for func in [gen_from_pil, gen_from_xkcd, gen_from_rand]:
-            try:
-                img = func(color)
-                break
-            except:
-                continue
+        img = gen_from_pil(color)
+        if img is None:
+            img = gen_from_xkcd(color)
+            if img is None:
+                img = gen_from_rand()
     else:
         img = gen_from_rand()
 

@@ -13,8 +13,11 @@ def gen_from_pil(phrase):
     """
     Generate an image from PIL defaults.
     """
-    print("Using PIL defaults")
-    return Image.new("RGB", (256, 256), phrase)
+    try:
+        img = Image.new("RGB", (256, 256), phrase)
+    except Exception as e:
+        return None
+    return img
 
 def gen_from_xkcd(phrase):
     """
@@ -22,13 +25,15 @@ def gen_from_xkcd(phrase):
     Get the first color that matches the phrase.
     """
     with open('rgb.txt') as f:
-        for line in f:
-            line = f.readline()
+        data = f.readlines()
+        for line in data:
             desc = " ".join(line.split()[:-1])
             if phrase == desc:
-                print("Generating from XKCD")
-                return Image.new("RGB", (256,256), line.split()[-1])
-
+                try:
+                    img = Image.new("RGB", (256,256), line.split()[-1])
+                except Exception as e:
+                    return None
+                return img
 
 def gen_from_rand(phrase=None):
     """
