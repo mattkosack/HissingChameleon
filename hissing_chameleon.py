@@ -47,11 +47,13 @@ async def frakes(ctx):
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, color=None):
     # Not sure how to write this better, I know it's ugly.
+    message = None
     if color is not None:
         img = gen_from_pil(color)
         if img is None:
             img = gen_from_xkcd(color)
             if img is None:
+                message = 'Could not find color, here is a random one'
                 img = gen_from_rand()
     else:
         img = gen_from_rand()
@@ -59,7 +61,7 @@ async def color(ctx, color=None):
     with io.BytesIO() as image_binary:
         img.save(image_binary, 'PNG')
         image_binary.seek(0)
-        await ctx.send(file=discord.File(fp=image_binary, filename=f'{color}.png')) 
+        await ctx.send(file=discord.File(fp=image_binary, filename=f'{color}.png'), content=message)
 
 
 if __name__ == "__main__":
