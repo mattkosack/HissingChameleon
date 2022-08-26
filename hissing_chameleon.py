@@ -3,7 +3,7 @@ import re
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands
-from utils import get_line
+from utils import get_line, get_color_from_text
 import requests
 from PIL import Image
 import random
@@ -48,8 +48,10 @@ async def frakes(ctx):
 async def color(ctx, color=None):
     if color is None:
         color = "#%06x" % random.randint(0, 0xFFFFFF)
-    print(color)
-    img = Image.new("RGB", (256, 256), color)
+    try: 
+        img = Image.new("RGB", (256, 256), color)
+    except:
+        img = Image.new("RGB", (256, 256), get_color_from_text(color))
     with io.BytesIO() as image_binary:
         img.save(image_binary, 'PNG')
         image_binary.seek(0)
