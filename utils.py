@@ -34,4 +34,4 @@ def gen_from_rand(phrase):
     Generate an image from a random color.
     """
     print("Generating random color")
-    return Image.new("#%06x" % random.randint(0, 0xFFFFFF))
+    return Image.new("RGB", (256,256), "#%06x" % random.randint(0, 0xFFFFFF))
