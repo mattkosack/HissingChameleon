@@ -30,7 +30,7 @@ def gen_from_xkcd(phrase):
                 return Image.new("RGB", (256,256), line.split()[-1])
 
 
-def gen_from_rand(phrase):
+def gen_from_rand(phrase=None):
     """
     Generate an image from a random color.
     """
