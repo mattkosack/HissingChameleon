@@ -26,9 +26,11 @@ async def on_message(message):
         await message.channel.send('I miss Luke :\\(')
     await bot.process_commands(message)
 
+
 @bot.command(name='test')
 async def ping(ctx):
     await ctx.send('pong')
+
 
 @bot.command(name="name", help="Says bot name")
 async def name(ctx):
@@ -43,6 +45,7 @@ async def name(ctx):
 async def frakes(ctx):
     print('getting line')
     await ctx.channel.send(get_line('frakes.txt'))
+
 
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, color=None):
