@@ -48,10 +48,17 @@ async def frakes(ctx):
 async def color(ctx, color=None):
     if color is None:
         color = "#%06x" % random.randint(0, 0xFFFFFF)
+
     try: 
         img = Image.new("RGB", (256, 256), color)
     except:
+        pass
+
+    try:
         img = Image.new("RGB", (256, 256), get_color_from_text(color))
+    except:
+        color = "#%06x" % random.randint(0, 0xFFFFFF)
+
     with io.BytesIO() as image_binary:
         img.save(image_binary, 'PNG')
         image_binary.seek(0)

@@ -16,6 +16,6 @@ def get_color_from_text(phrase):
         for line in f:
             line = f.readline()
             desc = " ".join(line.split()[:-1])
-            if re.search(phrase, desc):
+            if phrase == desc:
                 print(desc)
                 return line.split()[-1]
