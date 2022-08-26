@@ -48,6 +48,8 @@ async def frakes(ctx):
 async def color(ctx, color=None):
     for func in [gen_from_pil, gen_from_xkcd, gen_from_rand]:
         try:
+            if color is None:
+                continue
             img = func(color)
             break
         except:
