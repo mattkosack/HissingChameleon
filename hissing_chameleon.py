@@ -48,7 +48,7 @@ async def frakes(ctx):
 
 @bot.command(name="roll", help="rolls dice num d sides")
 async def roll(ctx, dice=None):
-    if not dice or not re.match(r"\d[dD]\d", dice):
+    if not dice or not re.match(r"\d+[dD]\d+", dice):
         await ctx.channel.send(random.randint(1, 6))
     else:
         num, sides = dice.split('d')
