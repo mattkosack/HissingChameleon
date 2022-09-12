@@ -47,7 +47,7 @@ async def frakes(ctx):
     await ctx.channel.send(get_line('frakes.txt'))
 
 @bot.command(name="roll", help="rolls dice num d sides")
-async def roll(ctx, dice: str):
+async def roll(ctx, dice=None):
     if not dice or not re.match(r"\d[dD]\d", dice):
         await ctx.channel.send(random.randint(1, 6))
     else:
