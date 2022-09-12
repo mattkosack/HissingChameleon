@@ -46,6 +46,14 @@ async def frakes(ctx):
     print('getting line')
     await ctx.channel.send(get_line('frakes.txt'))
 
+@bot.command(name="roll", help="rolls dice num d sides")
+async def roll(ctx, dice: str):
+    if not dice or not re.match(r"\d[dD]\d", dice):
+        await ctx.channel.send(random.randint(1, 6))
+    else:
+        num, sides = dice.split('d')
+        results = [random.randint(1, int(sides)) for _ in range(int(num))]
+        await ctx.channel.send(results)
 
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, color=None):
