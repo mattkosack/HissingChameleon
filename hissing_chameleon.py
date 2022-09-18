@@ -7,11 +7,12 @@ from utils import get_line, gen_from_pil, gen_from_xkcd, gen_from_rand
 import random
 import io
 import asyncio
-import ctypes.util
 
 FFMPEG_PATH = ''
 
-bot = commands.Bot(command_prefix='%')
+intents = discord.Intents.default()
+intents.message_content = True
+bot = commands.Bot(command_prefix='%', intents=intents)
 
 
 @bot.event
