@@ -36,23 +36,17 @@ async def ping(ctx):
 
 @bot.command(name="name", help="Says bot name")
 async def name(ctx):
-    if not ctx.author.voice:
+    user_voice_channel = ctx.message.author.voice.channel
+    if not user_voice_channel:
         # url="https://audio.pronouncekiwi.com/enNEW1/sukapon"
         embed = discord.Embed(
             title="Say my name", file='files/sukapon-sukapon.mp3', description="Say it.")
         await ctx.channel.send(embed=embed)
     else:
-        voice_client = discord.utils.get(bot.voice_clients, guild=ctx.guild)
-        audio_source = discord.FFmpegPCMAudio('files/sukapon-sukapon.mp3')
-        if not voice_client.is_playing():
-            voice_client.play(audio_source, after=None)
-        # channel = ctx.author.voice.channel
-        # await channel.connect()
-        # channel.play(discord.FFmpegPCMAudio(source='files/sukapon-sukapon.mp3')) # executable=FFMPEG_PATH, 
-        # while channel.is_playing():
-        #     sleep(.1)
-        # await channel.disconnect()
-
+        voice_client = await user_voice_channel.connect()
+        await ctx.send("Saying name")
+        voice_client.play(discord.FFmpegPCMAudio('files/sukapon-sukapon.mp3'))
+        # await voice_client.disconnect()
 
 @bot.command(name="leave", help="Makes the bot leave the voice channel")
 async def leave(ctx):
