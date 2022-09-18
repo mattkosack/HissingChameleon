@@ -46,7 +46,7 @@ async def name(ctx):
         voice_client = await user_voice_channel.connect()
         voice_client.play(discord.FFmpegPCMAudio('files/sukapon-sukapon.mp3')) # , after=lambda _: await voice_client.disconnect()
         while voice_client.is_playing():
-            await asyncio.sleep(1)
+            await asyncio.sleep(.1)
         await voice_client.disconnect()
 
 
