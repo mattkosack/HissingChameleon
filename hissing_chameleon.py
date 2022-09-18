@@ -1,4 +1,3 @@
-from asyncio.windows_utils import pipe
 import os
 import re
 from dotenv import load_dotenv
@@ -45,7 +44,7 @@ async def name(ctx):
     else:
         user_voice_channel = ctx.message.author.voice.channel
         voice_client = await user_voice_channel.connect()
-        voice_client.play(discord.FFmpegPCMAudio('files/sukapon.mp3'), pipe=True) # , after=lambda _: await voice_client.disconnect()
+        voice_client.play(discord.FFmpegPCMAudio('files/sukapon.mp3', pipe=True)) # , after=lambda _: await voice_client.disconnect()
         while voice_client.is_playing():
             await asyncio.sleep(1)
         await voice_client.disconnect()
