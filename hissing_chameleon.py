@@ -44,7 +44,7 @@ async def name(ctx):
     else:
         channel = ctx.author.voice.channel
         await channel.connect()
-        channel.play(discord.FFmpegPCMAudio(executable=FFMPEG_PATH, source='files/sukapon-sukapon.mp3'))
+        channel.play(discord.FFmpegPCMAudio(source='files/sukapon-sukapon.mp3')) # executable=FFMPEG_PATH, 
         # Sleep while audio is playing.
         while channel.is_playing():
             sleep(.1)
