@@ -42,13 +42,16 @@ async def name(ctx):
             title="Say my name", file='files/sukapon-sukapon.mp3', description="Say it.")
         await ctx.channel.send(embed=embed)
     else:
-        channel = ctx.author.voice.channel
-        await channel.connect()
-        channel.play(discord.FFmpegPCMAudio(source='files/sukapon-sukapon.mp3')) # executable=FFMPEG_PATH, 
-        # Sleep while audio is playing.
-        while channel.is_playing():
-            sleep(.1)
-        await channel.disconnect()
+        voice_client = discord.utils.get(bot.voice_clients, guild=ctx.guild)
+        audio_source = discord.FFmpegPCMAudio('files/sukapon-sukapon.mp3')
+        if not voice_client.is_playing():
+            voice_client.play(audio_source, after=None)
+        # channel = ctx.author.voice.channel
+        # await channel.connect()
+        # channel.play(discord.FFmpegPCMAudio(source='files/sukapon-sukapon.mp3')) # executable=FFMPEG_PATH, 
+        # while channel.is_playing():
+        #     sleep(.1)
+        # await channel.disconnect()
 
 
 @bot.command(name="leave", help="Makes the bot leave the voice channel")
