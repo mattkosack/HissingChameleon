@@ -36,7 +36,7 @@ async def ping(ctx):
 
 @bot.command(name="name", help="Says bot name")
 async def name(ctx):
-    if ctx.message.author.voice.channel is not None:
+    if ctx.message.author.voice is not None:
         # url="https://audio.pronouncekiwi.com/enNEW1/sukapon"
         embed = discord.Embed(
             title="Say my name", file='files/sukapon-sukapon.mp3', description="Say it.")
