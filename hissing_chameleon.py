@@ -42,7 +42,7 @@ async def name(ctx):
         await ctx.channel.send(embed=embed)
     else:
         voice_client = await user_voice_channel.connect()
-        voice_client.play(discord.FFmpegPCMAudio('files/sukapon-sukapon.mp3'), after=lambda _: await voice_client.disconnect())
+        voice_client.play(discord.FFmpegPCMAudio('files/sukapon-sukapon.mp3'), after=lambda _: voice_client.disconnect())
 
 
 @bot.command(name="leave", help="Makes the bot leave the voice channel")
