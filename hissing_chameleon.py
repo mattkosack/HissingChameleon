@@ -4,11 +4,8 @@ from dotenv import load_dotenv
 import discord
 from discord.ext import commands
 from utils import get_line, gen_from_pil, gen_from_xkcd, gen_from_rand
-import requests
-from PIL import Image
 import random
 import io
-from time import sleep
 import asyncio
 
 FFMPEG_PATH = ''
@@ -45,8 +42,7 @@ async def name(ctx):
         await ctx.channel.send(embed=embed)
     else:
         voice_client = await user_voice_channel.connect()
-        voice_client.play(discord.FFmpegPCMAudio('files/sukapon-sukapon.mp3'))
-        asyncio.run(voice_client.disconnect())
+        voice_client.play(discord.FFmpegPCMAudio('files/sukapon-sukapon.mp3'), after=lambda _: await voice_client.disconnect())
 
 
 @bot.command(name="leave", help="Makes the bot leave the voice channel")
