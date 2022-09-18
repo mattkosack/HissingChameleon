@@ -42,18 +42,6 @@ async def name(ctx):
             title="Say my name", file='files/sukapon-sukapon.mp3', description="Say it.")
         await ctx.channel.send(embed=embed)
     else:
-        print(f"ctypes - Find opus: {ctypes.util.find_library('opus')}")
-        a = ctypes.util.find_library('opus')
-        print(a)
-        
-        print("Discord - Load Opus:")
-        b = discord.opus.load_opus(a)
-        print(b)
-        
-        print("Discord - Is loaded:")
-        c = discord.opus.is_loaded()
-        print(c)
-
         voice_client = await user_voice_channel.connect()
         voice_client.play(discord.FFmpegPCMAudio('files/sukapon-sukapon.mp3')) # , after=lambda _: await voice_client.disconnect()
         while voice_client.is_playing():
