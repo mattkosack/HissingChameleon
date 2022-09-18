@@ -25,7 +25,7 @@ async def on_message(message):
     if message.author.bot:
         return
     if re.search(r"[Ll][^ -~]*[Uu][^ -~]*[Kk][^ -~]*[Ee]", message.content):
-        await message.channel.send("I miss Luke <:sob:>")
+        await message.channel.send("I miss Luke :sob:")
     await bot.process_commands(message)
 
 
