@@ -8,43 +8,59 @@ import requests
 from PIL import Image
 import random
 import io
+from time import sleep
+
+FFMPEG_PATH = ''
 
 bot = commands.Bot(command_prefix='%')
 
 
 @bot.event
 async def on_ready():
-    print(f'We have logged in as {bot}')
+    print(f"We have logged in as {bot}")
 
 
 @bot.event
 async def on_message(message):
     if message.author.bot:
         return
-
     if re.search(r"[Ll][^ -~]*[Uu][^ -~]*[Kk][^ -~]*[Ee]", message.content):
-        await message.channel.send('I miss Luke :\\(')
+        await message.channel.send("I miss Luke <:sob:>")
     await bot.process_commands(message)
 
 
-@bot.command(name='test')
+@bot.command(name='test', help='Test command')
 async def ping(ctx):
     await ctx.send('pong')
 
 
 @bot.command(name="name", help="Says bot name")
 async def name(ctx):
-    # await message.channel.send('https://audio.pronouncekiwi.com/enNEW1/sukapon')
-    embed = discord.Embed(
-        title="Say my name", url="https://audio.pronouncekiwi.com/enNEW1/sukapon", description="Say it.")
-    print('saying name')
-    await ctx.channel.send(embed=embed)
+    if not ctx.author.voice:
+        # url="https://audio.pronouncekiwi.com/enNEW1/sukapon"
+        embed = discord.Embed(
+            title="Say my name", file='files/sukapon-sukapon.mp3', description="Say it.")
+        await ctx.channel.send(embed=embed)
+    else:
+        channel = ctx.author.voice.channel
+        await channel.connect()
+        channel.play(discord.FFmpegPCMAudio(executable=FFMPEG_PATH, source='files/sukapon-sukapon.mp3'))
+        # Sleep while audio is playing.
+        while channel.is_playing():
+            sleep(.1)
+        await channel.disconnect()
+
+
+@bot.command(name="leave", help="Makes the bot leave the voice channel")
+async def leave(ctx):
+    await ctx.voice_client.disconnect()
 
 
 @bot.command(name="frakes", help="asks you a question")
 async def frakes(ctx):
     print('getting line')
-    await ctx.channel.send(get_line('frakes.txt'))
+    await ctx.channel.send(get_line('frakes/frakes.txt'))
+
 
 @bot.command(name="roll", help="rolls dice num d sides")
 async def roll(ctx, dice=None):
@@ -54,6 +70,7 @@ async def roll(ctx, dice=None):
         num, sides = dice.split('d')
         results = [random.randint(1, int(sides)) for _ in range(int(num))]
         await ctx.channel.send(results)
+
 
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, color=None):
