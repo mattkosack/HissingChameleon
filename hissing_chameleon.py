@@ -7,6 +7,7 @@ from utils import get_line, gen_from_pil, gen_from_xkcd, gen_from_rand
 import random
 import io
 import asyncio
+import ctypes.util
 
 
 intents = discord.Intents.default()
@@ -41,9 +42,22 @@ async def name(ctx):
             title="Say my name", url="https://audio.pronouncekiwi.com/enNEW1/sukapon", description="Say it.")
         await ctx.channel.send(embed=embed)
     else:
+        # check if opus is installed
+        print(f"ctypes - Find opus: {ctypes.util.find_library('opus')}")
+        a = ctypes.util.find_library('opus')
+        print(a)
+
+        print("Discord - Load Opus:")
+        b = discord.opus.load_opus(a)
+        print(b)
+
+        print("Discord - Is loaded:")
+        c = discord.opus.is_loaded()
+        print(c)
+
         user_voice_channel = ctx.message.author.voice.channel
         voice_client = await user_voice_channel.connect()
-        voice_client.play(discord.FFmpegAudio("files/sukapon.mp3"))
+        voice_client.play(discord.FFmpegPCMAudio("files/sukapon.mp3"))
         while voice_client.is_playing():
             await asyncio.sleep(1)
         await voice_client.disconnect()
