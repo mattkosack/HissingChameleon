@@ -22,8 +22,8 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    if message.author.bot:
-        return
+    if message.author == bot.user: return
+
     if re.search(r"[Ll][^ -~]*[Uu][^ -~]*[Kk][^ -~]*[Ee]", message.content):
         await message.channel.send("I miss Luke :sob:")
     await bot.process_commands(message)
@@ -31,11 +31,14 @@ async def on_message(message):
 
 @bot.command(name="test", help="Test command")
 async def ping(ctx):
+    if ctx.message.author == bot.user: return
     await ctx.send("pong")
 
 
 @bot.command(name="name", help="Says bot name")
 async def name(ctx):
+    if ctx.message.author == bot.user: return
+
     if ctx.message.author.voice is None:
         # url="https://audio.pronouncekiwi.com/enNEW1/sukapon" file="files/sukapon-sukapon.mp3"
         embed = discord.Embed(
@@ -65,12 +68,16 @@ async def leave(ctx):
 
 @bot.command(name="frakes", help="asks you a question")
 async def frakes(ctx):
+    if ctx.message.author == bot.user: return
+
     print("getting line")
-    await ctx.channel.send(get_line("frakes/frakes.txt"))
+    await ctx.channel.send(get_line("files/frakes.txt"))
 
 
 @bot.command(name="roll", help="rolls dice num d sides")
 async def roll(ctx, dice=None):
+    if ctx.message.author == bot.user: return
+
     if not dice or not re.match(r"\d+[dD]\d+", dice):
         await ctx.channel.send(random.randint(1, 6))
     else:
@@ -81,6 +88,8 @@ async def roll(ctx, dice=None):
 
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, color=None):
+    if ctx.message.author == bot.user: return
+
     # Not sure how to write this better, I know it's ugly.
     message = None
     if color is not None:

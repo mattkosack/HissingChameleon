@@ -26,7 +26,7 @@ def gen_from_xkcd(phrase):
     Generate an image from rgb.txt. (https://blog.xkcd.com/2010/05/03/color-survey-results/)
     Get the first color that matches the phrase.
     """
-    with open('rgb.txt') as f:
+    with open('files/rgb.txt') as f:
         data = f.readlines()
         for line in data:
             desc = " ".join(line.split()[:-1])
