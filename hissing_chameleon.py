@@ -56,7 +56,7 @@ async def name(ctx):
         voice_client = await user_voice_channel.connect()
         voice_client.play(discord.FFmpegPCMAudio("files/sukapon.mp3"))
         voice_client.source = discord.PCMVolumeTransformer(voice_client.source)
-        vc.source.volume = 10.0
+        voice_client.source.volume = 10.0
         while voice_client.is_playing():
             print(voice_client.is_playing())
             await asyncio.sleep(1)
