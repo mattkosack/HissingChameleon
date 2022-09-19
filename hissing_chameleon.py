@@ -47,7 +47,8 @@ async def name(ctx):
     else:
         # check if opus is installed
         find_lib = ctypes.util.find_library('opus')
-        print(f"Find opus: {find_lib}")
+        print("LOOK HERE DUMMY")
+        print(f"Find Opus: {find_lib}")
         print("Load Opus: ")
         discord.opus.load_opus(find_lib)
         print(f"Discord - Is loaded: {discord.opus.is_loaded()}")
