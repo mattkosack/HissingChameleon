@@ -47,18 +47,17 @@ async def name(ctx):
     else:
         # check if opus is installed
         find_lib = ctypes.util.find_library('opus')
-        print("LOOK HERE DUMMY")
         print(f"Find Opus: {find_lib}")
-        print("Load Opus: ")
+        print("Loading Opus")
         discord.opus.load_opus(find_lib)
         print(f"Discord - Is loaded: {discord.opus.is_loaded()}")
 
         user_voice_channel = ctx.message.author.voice.channel
         voice_client = await user_voice_channel.connect()
         voice_client.play(discord.FFmpegPCMAudio("files/sukapon.mp3"))
-        while voice_client.is_playing():
-            await asyncio.sleep(1)
-        await voice_client.disconnect()
+        # while voice_client.is_playing():
+        #     await asyncio.sleep(1)
+        # await voice_client.disconnect()
 
 
 @bot.command(name="leave", help="Makes the bot leave the voice channel")
