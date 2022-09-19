@@ -8,6 +8,7 @@ import random
 import io
 import asyncio
 import ctypes.util
+import time
 
 
 intents = discord.Intents.default()
@@ -54,14 +55,13 @@ async def name(ctx):
 
         user_voice_channel = ctx.message.author.voice.channel
         voice_client = await user_voice_channel.connect()
+        start = time.time()
         voice_client.play(discord.FFmpegPCMAudio("files/sukapon.mp3"))
-        x = 0
         while voice_client.is_playing():
-            x+=1
-            print(x)
             await asyncio.sleep(1)
-
-        # await voice_client.disconnect()
+        stop = time.time()
+        print(f"Time: {stop-start}")
+        await voice_client.disconnect()
 
 
 @bot.command(name="leave", help="Makes the bot leave the voice channel")
