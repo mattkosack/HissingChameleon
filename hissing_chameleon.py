@@ -8,11 +8,10 @@ import random
 import io
 import asyncio
 
-FFMPEG_PATH = ''
 
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix='%', intents=intents)
+bot = commands.Bot(command_prefix="%", intents=intents)
 
 
 @bot.event
@@ -29,22 +28,22 @@ async def on_message(message):
     await bot.process_commands(message)
 
 
-@bot.command(name='test', help='Test command')
+@bot.command(name="test", help="Test command")
 async def ping(ctx):
-    await ctx.send('pong')
+    await ctx.send("pong")
 
 
 @bot.command(name="name", help="Says bot name")
 async def name(ctx):
     if ctx.message.author.voice is None:
-        # url="https://audio.pronouncekiwi.com/enNEW1/sukapon" file='files/sukapon-sukapon.mp3'
+        # url="https://audio.pronouncekiwi.com/enNEW1/sukapon" file="files/sukapon-sukapon.mp3"
         embed = discord.Embed(
             title="Say my name", url="https://audio.pronouncekiwi.com/enNEW1/sukapon", description="Say it.")
         await ctx.channel.send(embed=embed)
     else:
         user_voice_channel = ctx.message.author.voice.channel
         voice_client = await user_voice_channel.connect()
-        voice_client.play(discord.FFmpegPCMAudio('files/sukapon.mp3', pipe=True)) # , after=lambda _: await voice_client.disconnect()
+        voice_client.play(discord.FFmpegAudio("files/sukapon.mp3"))
         while voice_client.is_playing():
             await asyncio.sleep(1)
         await voice_client.disconnect()
@@ -58,8 +57,8 @@ async def leave(ctx):
 
 @bot.command(name="frakes", help="asks you a question")
 async def frakes(ctx):
-    print('getting line')
-    await ctx.channel.send(get_line('frakes/frakes.txt'))
+    print("getting line")
+    await ctx.channel.send(get_line("frakes/frakes.txt"))
 
 
 @bot.command(name="roll", help="rolls dice num d sides")
@@ -67,7 +66,7 @@ async def roll(ctx, dice=None):
     if not dice or not re.match(r"\d+[dD]\d+", dice):
         await ctx.channel.send(random.randint(1, 6))
     else:
-        num, sides = dice.split('d')
+        num, sides = dice.split("d")
         results = [random.randint(1, int(sides)) for _ in range(int(num))]
         await ctx.channel.send(results)
 
@@ -81,18 +80,18 @@ async def color(ctx, color=None):
         if img is None:
             img = gen_from_xkcd(color)
             if img is None:
-                message = 'Could not find color, here is a random one'
+                message = "Could not find color, here is a random one"
                 img = gen_from_rand()
     else:
         img = gen_from_rand()
 
     with io.BytesIO() as image_binary:
-        img.save(image_binary, 'PNG')
+        img.save(image_binary, "PNG")
         image_binary.seek(0)
-        await ctx.send(file=discord.File(fp=image_binary, filename=f'{color}.png'), content=message)
+        await ctx.send(file=discord.File(fp=image_binary, filename=f"{color}.png"), content=message)
 
 
 if __name__ == "__main__":
     load_dotenv()
-    token = os.getenv('DISCORD_TOKEN')
+    token = os.getenv("DISCORD_TOKEN")
     bot.run(token)
