@@ -23,7 +23,7 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    if ctx.message.author.bot: return
+    if message.author.bot: return
 
     if re.search(r"[Ll][^ -~]*[Uu][^ -~]*[Kk][^ -~]*[Ee]", message.content):
         await message.channel.send("I miss Luke :sob:")
