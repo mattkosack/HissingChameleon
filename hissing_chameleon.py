@@ -47,11 +47,11 @@ async def name(ctx):
         await ctx.channel.send(embed=embed)
     else:
         # check if opus is installed
-        find_lib = ctypes.util.find_library('opus')
-        print(f"Find Opus: {find_lib}")
-        print("Loading Opus")
-        discord.opus.load_opus(find_lib)
-        print(f"Discord - Is loaded: {discord.opus.is_loaded()}")
+        # find_lib = ctypes.util.find_library('opus')
+        # print(f"Find Opus: {find_lib}")
+        # print("Loading Opus")
+        # discord.opus.load_opus(find_lib)
+        # print(f"Discord - Is loaded: {discord.opus.is_loaded()}")
 
         user_voice_channel = ctx.message.author.voice.channel
         voice_client = await user_voice_channel.connect()
