@@ -53,6 +53,11 @@ async def name(ctx):
         # discord.opus.load_opus(find_lib)
         # print(f"Discord - Is loaded: {discord.opus.is_loaded()}")
 
+        discord.opus.load_opus()
+
+        # TODO: Figure out a way to automatically find the file
+        # discord.opus.load_opus('/opt/homebrew/Cellar/opus/1.3.1/lib/libopus.dylib')
+
         user_voice_channel = ctx.message.author.voice.channel
         voice_client = await user_voice_channel.connect()
         start = time.time()
