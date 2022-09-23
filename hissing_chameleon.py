@@ -24,8 +24,8 @@ async def on_ready():
 @bot.event
 async def on_message(message):
     if message.author.bot: return
-    print(message.guild.id)
-    if message.guild.id == '891496433881055272': return
+    print(type(message.guild.id))
+    if message.guild.id == 891496433881055272: return
 
     if re.search(r"[Ll][^ -~]*[Uu][^ -~]*[Kk][^ -~]*[Ee]", message.content):
         await message.channel.send("I miss Luke :sob:")
