@@ -24,6 +24,7 @@ async def on_ready():
 @bot.event
 async def on_message(message):
     if message.author.bot: return
+    print(message.guild.id)
     if message.guild.id == '891496433881055272': return
 
     if re.search(r"[Ll][^ -~]*[Uu][^ -~]*[Kk][^ -~]*[Ee]", message.content):
@@ -98,9 +99,11 @@ async def roll(ctx, dice=None):
 async def color(ctx, color=None):
     if ctx.message.author.bot: return
 
+    print(color)
     # Not sure how to write this better, I know it's ugly.
     message = None
     if color is not None:
+        color = color.strip()
         img = gen_from_pil(color)
         if img is None:
             img = gen_from_xkcd(color)
