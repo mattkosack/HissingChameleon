@@ -24,6 +24,7 @@ async def on_ready():
 @bot.event
 async def on_message(message):
     if message.author.bot: return
+    if message.guild.id == '891496433881055272': return
 
     if re.search(r"[Ll][^ -~]*[Uu][^ -~]*[Kk][^ -~]*[Ee]", message.content):
         await message.channel.send("I miss Luke :sob:")
@@ -52,8 +53,6 @@ async def name(ctx):
         # print("Loading Opus")
         # discord.opus.load_opus(find_lib)
         # print(f"Discord - Is loaded: {discord.opus.is_loaded()}")
-
-        discord.opus.load_opus()
 
         # TODO: Figure out a way to automatically find the file
         # discord.opus.load_opus('/opt/homebrew/Cellar/opus/1.3.1/lib/libopus.dylib')
