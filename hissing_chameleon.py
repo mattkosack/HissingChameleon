@@ -3,11 +3,10 @@ import re
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands
-from utils import get_line, gen_from_pil, gen_from_xkcd, gen_from_rand
+from utils import get_line, gen_from_pil, gen_from_xkcd, gen_from_rand, send_input
 import random
 import io
 import asyncio
-import ctypes.util
 import time
 
 
@@ -23,24 +22,28 @@ async def on_ready():
 
 @bot.event
 async def on_message(message):
-    if message.author.bot: return
-    print(type(message.guild.id))
-    if message.guild.id == 891496433881055272: return
+    if message.author.bot:
+        return
+
+    if message.guild.id == 891496433881055272:
+        return
 
     if re.search(r"[Ll][^ -~]*[Uu][^ -~]*[Kk][^ -~]*[Ee]", message.content):
         await message.channel.send("I miss Luke :sob:")
     await bot.process_commands(message)
 
 
-@bot.command(name="test", help="Test command")
+@bot.command(name="ping", help="Test command")
 async def ping(ctx):
-    if ctx.message.author.bot: return
+    if ctx.message.author.bot:
+        return
     await ctx.send("pong")
 
 
 @bot.command(name="name", help="Says bot name")
 async def name(ctx):
-    if ctx.message.author.bot: return
+    if ctx.message.author.bot:
+        return
 
     if ctx.message.author.voice is None:
         # url="https://audio.pronouncekiwi.com/enNEW1/sukapon" file="files/sukapon-sukapon.mp3"
@@ -61,7 +64,8 @@ async def name(ctx):
         user_voice_channel = ctx.message.author.voice.channel
         voice_client = await user_voice_channel.connect()
         start = time.time()
-        voice_client.play(discord.FFmpegPCMAudio("https://audio.pronouncekiwi.com/enNEW1/sukapon"))
+        voice_client.play(discord.FFmpegPCMAudio(
+            "https://audio.pronouncekiwi.com/enNEW1/sukapon"))
         while voice_client.is_playing():
             await asyncio.sleep(1)
         stop = time.time()
@@ -77,7 +81,8 @@ async def leave(ctx):
 
 @bot.command(name="frakes", help="asks you a question")
 async def frakes(ctx):
-    if ctx.message.author.bot: return
+    if ctx.message.author.bot:
+        return
 
     print("getting line")
     await ctx.channel.send(get_line("files/frakes.txt"))
@@ -85,7 +90,8 @@ async def frakes(ctx):
 
 @bot.command(name="roll", help="rolls dice num d sides")
 async def roll(ctx, dice=None):
-    if ctx.message.author.bot: return
+    if ctx.message.author.bot:
+        return
 
     if not dice or not re.match(r"\d+[dD]\d+", dice):
         await ctx.channel.send(random.randint(1, 6))
@@ -97,7 +103,8 @@ async def roll(ctx, dice=None):
 
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, color=None):
-    if ctx.message.author.bot: return
+    if ctx.message.author.bot:
+        return
 
     print(color)
     # Not sure how to write this better, I know it's ugly.
@@ -117,6 +124,41 @@ async def color(ctx, color=None):
         img.save(image_binary, "PNG")
         image_binary.seek(0)
         await ctx.send(file=discord.File(fp=image_binary, filename=f"{color}.png"), content=message)
+
+
+# @bot.command(name="game", help="Play the game")
+async def game(ctx, command=None):
+    if ctx.message.author.bot: 
+        return
+
+    if command is None:
+        await ctx.channel.send("What do you want to do?")
+
+    input_command = ""
+    match command.strip().lower():
+        case "up" | "u":
+            input_command = "up"
+        case "down" | "d":
+            input_command = "down"
+        case "left" | "l":
+            input_command = "left"
+        case "right" | "r":
+            input_command = "right"
+        case "a":
+            input_command = "a"
+        case "b":
+            input_command = "b"
+        case "start" | "st":
+            input_command = "start"
+        case "select" | "sel":
+            input_command = "select"
+        case _:
+            await ctx.channel.send("Invalid command")
+
+    if input_command != "":
+        ip = os.getenv("IP")
+        port = os.getenv("PORT")
+        send_input(ip, port, input_command)
 
 
 if __name__ == "__main__":

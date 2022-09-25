@@ -1,6 +1,5 @@
 import requests
 import random
-import re
 from PIL import Image
 
 
@@ -44,3 +43,8 @@ def gen_from_rand(phrase=None):
     """
     print("Generating random color")
     return Image.new("RGB", (256, 256), "#%06x" % random.randint(0, 0xFFFFFF))
+
+
+def send_input(ip, port, data):
+    url = f'http://{ip}:{port}/input'
+    requests.post(url, data=data)
