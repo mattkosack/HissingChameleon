@@ -1,6 +1,10 @@
 import requests
 import random
 from PIL import Image
+import ast
+
+def rgb2hex(r, g, b):
+    return '#{:02x}{:02x}{:02x}'.format(r, g, b)
 
 
 def get_line(file_name):
@@ -9,15 +13,41 @@ def get_line(file_name):
     return random.choice(lines)
 
 
-def gen_from_pil(phrase):
+def get_color_and_mode(color):
+    """
+    Get the color and mode from the input.
+    This could probably be done better.
+    """
+    if "RGBA" in color.upper():
+        mode = "RGBA"
+    elif "HSV" in color.upper():
+        mode = "HSV"
+    elif "LAB" in color.upper():
+        mode = "LAB"
+    else:
+        mode = "RGB"
+
+    color = ast.literal_eval(color.upper().replace(mode, ""))
+    return color, mode
+
+
+def gen_from_pil(phrase, mode):
     """
     Generate an image from PIL defaults.
     """
     try:
-        img = Image.new("RGB", (256, 256), phrase)
-    except:
+        img = Image.new(mode, (256, 256), phrase)
+    except Exception as e:
+        print(e)
         return None
-    return img
+    # TODO: color to hex
+    # if mode == "RGB":
+    #     r,g,b = img.load()[0,0]
+    #     name = rgb2hex(r, g, b)
+    # elif mode == "RGBA":
+    #     r,g,b,a = img.load()[0,0]
+    #     name = rgb2hex(r, g, b)
+    return img, phrase
 
 
 def gen_from_xkcd(phrase):
@@ -32,9 +62,11 @@ def gen_from_xkcd(phrase):
             if phrase == desc:
                 try:
                     img = Image.new("RGB", (256, 256), line.split()[-1])
-                except:
+                except Exception as e:
+                    print(e)
                     return None
-                return img
+                return img, desc
+            return None, None
 
 
 def gen_from_rand(phrase=None):
@@ -42,7 +74,14 @@ def gen_from_rand(phrase=None):
     Generate an image from a random color.
     """
     print("Generating random color")
-    return Image.new("RGB", (256, 256), "#%06x" % random.randint(0, 0xFFFFFF))
+    choice = random.choice([0, 1])
+    if choice == 0:
+        mode = "RGB"
+        name = "#%06x" % random.randint(0, 0xFFFFFF)
+    else:
+        mode = "RGBA"
+        name = "#%08x" % random.randint(0, 0xFFFFFFFF)
+    return Image.new(mode, (256, 256), name), name
 
 
 def send_input(ip, port, data):

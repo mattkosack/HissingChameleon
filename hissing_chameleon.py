@@ -3,7 +3,7 @@ import re
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands
-from utils import get_line, gen_from_pil, gen_from_xkcd, gen_from_rand, send_input
+from utils import get_line, gen_from_pil, gen_from_xkcd, gen_from_rand, send_input, get_color_and_mode
 import random
 import io
 import asyncio
@@ -106,24 +106,28 @@ async def color(ctx, color=None):
     if ctx.message.author.bot:
         return
 
-    print(color)
     # Not sure how to write this better, I know it's ugly.
     message = None
     if color is not None:
-        color = color.strip()
-        img = gen_from_pil(color)
+        color, mode = get_color_and_mode(color.strip())
+        # TODO: Figure out how to retain HSV and other color modes
+        if mode != "RGB" and mode != "RGBA":
+            message = "Sorry, I can only show RGB and RGBA colors. Here's a random color."
+            img, name = gen_from_rand()
+        else:
+            img, name = gen_from_pil(color, mode)
         if img is None:
             img = gen_from_xkcd(color)
             if img is None:
                 message = "Could not find color, here is a random one"
-                img = gen_from_rand()
+                img, name = gen_from_rand()
     else:
-        img = gen_from_rand()
+        img, name = gen_from_rand()
 
     with io.BytesIO() as image_binary:
         img.save(image_binary, "PNG")
         image_binary.seek(0)
-        await ctx.send(file=discord.File(fp=image_binary, filename=f"{color}.png"), content=message)
+        await ctx.send(file=discord.File(fp=image_binary, filename=f"{name}.png"), content=message)
 
 
 # @bot.command(name="game", help="Play the game")
