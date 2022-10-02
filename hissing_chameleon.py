@@ -102,7 +102,7 @@ async def roll(ctx, dice=None):
 
 
 @bot.command(name="color", help="Shows the color")
-async def color(ctx, color=None):
+async def color(ctx, *, color=None):
     if ctx.message.author.bot:
         return
 
