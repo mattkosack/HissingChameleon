@@ -106,11 +106,11 @@ async def color(ctx, *, color=None):
     if ctx.message.author.bot:
         return
 
+    print(f"Passed Color: {color}")
     # Not sure how to write this better, I know it's ugly.
     message = None
     mode = None
     if color is not None:
-        print(f"Passed Color: {color}")
         color, mode = get_color_and_mode(color.strip())
         # TODO: Figure out how to retain HSV and other color modes
         if mode != "RGB" and mode != "RGBA":
@@ -126,14 +126,15 @@ async def color(ctx, *, color=None):
     else:
         img, name = gen_from_rand()
 
-    if mode == "RGB":
-        r, g, b = color
-        hex_name = rgb2hex(int(r), int(g), int(b))
+    # TODO: Refactor basically the whole function because this is a hacky way to check this
+    if isinstance(color, tuple):
+        if mode == "RGB":
+            r, g, b = color
+            hex_name = rgb2hex(int(r), int(g), int(b))
 
-    elif mode == "RGBA":
-        r, g, b, a = color
-        hex_name = rgba2hex(int(r), int(g), int(b), int(a))
-
+        elif mode == "RGBA":
+            r, g, b, a = color
+            hex_name = rgba2hex(int(r), int(g), int(b), int(a))
     else:
         hex_name = name
 

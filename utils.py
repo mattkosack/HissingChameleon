@@ -57,13 +57,6 @@ def gen_from_pil(phrase, mode):
     except Exception as e:
         print(e)
         return None
-    # TODO: color to hex
-    # if mode == "RGB":
-    #     r,g,b = img.load()[0,0]
-    #     name = rgb2hex(r, g, b)
-    # elif mode == "RGBA":
-    #     r,g,b,a = img.load()[0,0]
-    #     name = rgb2hex(r, g, b)
     return img, phrase
 
 
