@@ -3,7 +3,7 @@ import re
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands
-from utils import get_line, gen_from_pil, gen_from_xkcd, gen_from_rand, send_input, get_color_and_mode
+from utils import get_line, gen_from_pil, gen_from_xkcd, gen_from_rand, send_input, get_color_and_mode, rgb2hex, rgba2hex
 import random
 import io
 import asyncio
@@ -125,10 +125,21 @@ async def color(ctx, *, color=None):
     else:
         img, name = gen_from_rand()
 
+    if mode == "RGB":
+        r, g, b = color
+        hex_name = rgb2hex(int(r), int(g), int(b))
+
+    elif mode == "RGBA":
+        r, g, b, a = color
+        hex_name = rgba2hex(int(r), int(g), int(b), int(a))
+
+    else:
+        hex_name = name
+
     with io.BytesIO() as image_binary:
         img.save(image_binary, "PNG")
         image_binary.seek(0)
-        await ctx.send(file=discord.File(fp=image_binary, filename=f"{name}.png"), content=message)
+        await ctx.send(file=discord.File(fp=image_binary, filename=f"{hex_name}.png"), content=message)
 
 
 # @bot.command(name="game", help="Play the game")
