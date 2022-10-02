@@ -6,6 +6,9 @@ import ast
 def rgb2hex(r, g, b):
     return '#{:02x}{:02x}{:02x}'.format(r, g, b)
 
+def rgba2hex(r, g, b, a):
+    return '#{:02x}{:02x}{:02x}{:02x}'.format(r, g, b, a)
+
 
 def get_line(file_name):
     with open(file_name) as f:
@@ -18,17 +21,31 @@ def get_color_and_mode(color):
     Get the color and mode from the input.
     This could probably be done better.
     """
+    # If it is a hex color and does not contain an alpha channel
+    if len(color) == 7 and color[0] == "#":
+        return color, "RGB"
+
+    # If it is a hex color and contains an alpha channel
+    if len(color) == 9 and color[0] == "#":
+        return color, "RGBA"
+
+    # If it contains these modes, need to evaluate it
     if "RGBA" in color.upper():
         mode = "RGBA"
+    elif "RGB" in color.upper():
+        mode = "RGB"
     elif "HSV" in color.upper():
         mode = "HSV"
     elif "LAB" in color.upper():
         mode = "LAB"
     else:
-        mode = "RGB"
+        mode = None
 
-    color = ast.literal_eval(color.upper().replace(mode, ""))
-    return color, mode
+    if mode is None:
+        return color, "RGB"
+    else:
+        color = ast.literal_eval(color.upper().replace(mode, ""))
+        return color, mode
 
 
 def gen_from_pil(phrase, mode):
@@ -65,7 +82,7 @@ def gen_from_xkcd(phrase):
                 except Exception as e:
                     print(e)
                     return None
-                return img, desc
+                return img, line.split()[-1]
             return None, None
 
 
