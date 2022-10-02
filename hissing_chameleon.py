@@ -103,7 +103,7 @@ async def roll(ctx, dice=None):
 
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, *, color=None):
-    # TODO: 
+    # TODO:
     # Figure out how to retain HSV and other color modes
     # Find a better way to check color names (isinstance is kind of hacky here)
     # get hex if its a PIL supported color name
@@ -145,44 +145,82 @@ async def color(ctx, *, color=None):
         image_binary.seek(0)
         await ctx.send(file=discord.File(fp=image_binary, filename=f"{hex_name}.png"), content=message)
 
+##############################################################################################################
+################################################# GAME INPUT #################################################
+##############################################################################################################
 
-# @bot.command(name="game", help="Play the game")
-async def game(ctx, command=None):
-    if ctx.message.author.bot: 
+
+@bot.command(name="up", help="Press up in the game")
+async def up(ctx):
+    if ctx.message.author.bot:
         return
 
-    if command is None:
-        await ctx.channel.send("What do you want to do?")
+    send_input(GAME_IP, GAME_PORT, "up")
 
-    input_command = ""
-    # TODO: change from match because raspberry pi is a pain in the ass to setup 
-    # match command.strip().lower():
-    #     case "up" | "u":
-    #         input_command = "up"
-    #     case "down" | "d":
-    #         input_command = "down"
-    #     case "left" | "l":
-    #         input_command = "left"
-    #     case "right" | "r":
-    #         input_command = "right"
-    #     case "a":
-    #         input_command = "a"
-    #     case "b":
-    #         input_command = "b"
-    #     case "start" | "st":
-    #         input_command = "start"
-    #     case "select" | "sel":
-    #         input_command = "select"
-    #     case _:
-    #         await ctx.channel.send("Invalid command")
 
-    if input_command != "":
-        ip = os.getenv("IP")
-        port = os.getenv("PORT")
-        send_input(ip, port, input_command)
+@bot.command(name="down", help="Press down in the game")
+async def down(ctx):
+    if ctx.message.author.bot:
+        return
+
+    send_input(GAME_IP, GAME_PORT, "down")
+
+
+@bot.command(name="left", help="Press left in the game")
+async def left(ctx):
+    if ctx.message.author.bot:
+        return
+
+    send_input(GAME_IP, GAME_PORT, "left")
+
+
+@bot.command(name="right", help="Press right in the game")
+async def right(ctx):
+    if ctx.message.author.bot:
+        return
+
+    send_input(GAME_IP, GAME_PORT, "right")
+
+
+@bot.command(name="a", help="Press a in the game")
+async def a(ctx):
+    if ctx.message.author.bot:
+        return
+
+    send_input(GAME_IP, GAME_PORT, "a")
+
+
+@bot.command(name="b", help="Press b in the game")
+async def b(ctx):
+    if ctx.message.author.bot:
+        return
+
+    send_input(GAME_IP, GAME_PORT, "b")
+
+
+@bot.command(name="start", help="Press start in the game")
+async def start(ctx):
+    if ctx.message.author.bot:
+        return
+
+    send_input(GAME_IP, GAME_PORT, "start")
+
+
+@bot.command(name="select", help="Press select in the game")
+async def select(ctx):
+    if ctx.message.author.bot:
+        return
+
+    send_input(GAME_IP, GAME_PORT, "select")
+
+##############################################################################################################
+##############################################################################################################
+##############################################################################################################
 
 
 if __name__ == "__main__":
     load_dotenv()
+    GAME_IP = os.getenv("IP")
+    GAME_PORT = os.getenv("PORT")
     token = os.getenv("DISCORD_TOKEN")
     bot.run(token)

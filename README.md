@@ -13,3 +13,4 @@ Everyone's got their own discord bot. Here's mine.
 - `chmod +x auto_deploy.sh`
 - make it a service/cron job
 - `sudo apt install ffmpeg`
+- https://obsproject.com/forum/threads/obs-raspberry-pi-build-instructions.115739/
