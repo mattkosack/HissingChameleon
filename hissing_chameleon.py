@@ -139,25 +139,26 @@ async def game(ctx, command=None):
         await ctx.channel.send("What do you want to do?")
 
     input_command = ""
-    match command.strip().lower():
-        case "up" | "u":
-            input_command = "up"
-        case "down" | "d":
-            input_command = "down"
-        case "left" | "l":
-            input_command = "left"
-        case "right" | "r":
-            input_command = "right"
-        case "a":
-            input_command = "a"
-        case "b":
-            input_command = "b"
-        case "start" | "st":
-            input_command = "start"
-        case "select" | "sel":
-            input_command = "select"
-        case _:
-            await ctx.channel.send("Invalid command")
+    # TODO: change from match because raspberry pi is a pain in the ass to setup 
+    # match command.strip().lower():
+    #     case "up" | "u":
+    #         input_command = "up"
+    #     case "down" | "d":
+    #         input_command = "down"
+    #     case "left" | "l":
+    #         input_command = "left"
+    #     case "right" | "r":
+    #         input_command = "right"
+    #     case "a":
+    #         input_command = "a"
+    #     case "b":
+    #         input_command = "b"
+    #     case "start" | "st":
+    #         input_command = "start"
+    #     case "select" | "sel":
+    #         input_command = "select"
+    #     case _:
+    #         await ctx.channel.send("Invalid command")
 
     if input_command != "":
         ip = os.getenv("IP")
