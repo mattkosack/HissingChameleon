@@ -103,6 +103,10 @@ async def roll(ctx, dice=None):
 
 @bot.command(name="color", help="Shows the color")
 async def color(ctx, *, color=None):
+    # TODO: 
+    # Figure out how to retain HSV and other color modes
+    # Find a better way to check color names (isinstance is kind of hacky here)
+    # get hex if its a PIL supported color name
     if ctx.message.author.bot:
         return
 
@@ -112,7 +116,6 @@ async def color(ctx, *, color=None):
     mode = None
     if color is not None:
         color, mode = get_color_and_mode(color.strip())
-        # TODO: Figure out how to retain HSV and other color modes
         if mode != "RGB" and mode != "RGBA":
             message = "Sorry, I can only show RGB and RGBA colors. Here's a random color."
             img, name = gen_from_rand()
@@ -126,7 +129,6 @@ async def color(ctx, *, color=None):
     else:
         img, name = gen_from_rand()
 
-    # TODO: Refactor basically the whole function because this is a hacky way to check this
     if isinstance(color, tuple):
         if mode == "RGB":
             r, g, b = color
