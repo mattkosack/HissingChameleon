@@ -109,6 +109,7 @@ async def color(ctx, color=None):
     # Not sure how to write this better, I know it's ugly.
     message = None
     if color is not None:
+        print(f"Passed Color: {color}")
         color, mode = get_color_and_mode(color.strip())
         # TODO: Figure out how to retain HSV and other color modes
         if mode != "RGB" and mode != "RGBA":
