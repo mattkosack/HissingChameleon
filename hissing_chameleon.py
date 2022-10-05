@@ -121,8 +121,9 @@ async def color(ctx, *, color=None):
             img, name = gen_from_rand()
         else:
             img, name = gen_from_pil(color, mode)
+
         if img is None:
-            img = gen_from_xkcd(color)
+            img, name = gen_from_xkcd(color)
             if img is None:
                 message = "Could not find color, here is a random one"
                 img, name = gen_from_rand()

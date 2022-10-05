@@ -74,7 +74,7 @@ def gen_from_xkcd(phrase):
                     img = Image.new("RGB", (256, 256), line.split()[-1])
                 except Exception as e:
                     print(e)
-                    return None
+                    return None, None
                 return img, line.split()[-1]
             return None, None
 
