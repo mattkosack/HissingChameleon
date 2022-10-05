@@ -25,11 +25,11 @@ async def on_message(message):
     if message.author.bot:
         return
 
-    if message.guild.id == 891496433881055272:
-        return
-
     if re.search(r"[Ll][^ -~]*[Uu][^ -~]*[Kk][^ -~]*[Ee]", message.content):
-        await message.channel.send("I miss Luke :sob:")
+        if message.guild.id == 891496433881055272:
+            return
+        else:
+            await message.channel.send("I miss Luke :sob:")
     await bot.process_commands(message)
 
 

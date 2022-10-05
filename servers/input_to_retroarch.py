@@ -1,7 +1,5 @@
 from flask import Flask, request
-from dotenv import load_dotenv
-import os
-from pyautogui import press, typewrite, hotkey
+from pyautogui import press
 
 # press('a')
 # typewrite('quick brown fox')
@@ -20,23 +18,23 @@ def create_server():
         game_input = request.form['input']
         print('Recieved Input: ' + game_input)
         if game_input == 'up':
-            press('up')
+            press('u')
         elif game_input == 'down':
-            press('down')
+            press('d')
         elif game_input == 'left':
-            press('left')
+            press('l')
         elif game_input == 'right':
-            press('right')
+            press('r')
         elif game_input == 'a':
             press('a')
         elif game_input == 'b':
             press('b')
         elif game_input == 'start':
-            press('enter')
+            press('s')
         elif game_input == 'select':
-            press('backspace')
-        elif game_input == 'SAVE':
-            press('f5')
+            press('d')            
+        # elif game_input == 'SAVE':
+        #     press('f5')
         else:
             return 'Invalid Input'
         return 'OK'
@@ -45,6 +43,5 @@ def create_server():
 
 
 if __name__ == '__main__':
-    load_dotenv()
     server = create_server()
-    server.run(host=os.getenv('SERVER_IP'), port=8080, debug=True)
+    server.run(host='0.0.0.0', port=8080, debug=False)
