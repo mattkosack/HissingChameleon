@@ -120,7 +120,6 @@ async def color(ctx, *, color=None):
             message = "Sorry, I can only show RGB and RGBA colors. Here's a random color."
             img, name = gen_from_rand()
         else:
-            print(f"Color: {color}")
             img, name = gen_from_pil(color, mode)
         if img is None:
             img = gen_from_xkcd(color)

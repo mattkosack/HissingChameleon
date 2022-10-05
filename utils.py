@@ -56,7 +56,7 @@ def gen_from_pil(phrase, mode):
         img = Image.new(mode, (256, 256), phrase)
     except Exception as e:
         print(e)
-        return None
+        return None, phrase
     return img, phrase
 
 
