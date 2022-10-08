@@ -147,18 +147,33 @@ async def color(ctx, *, color=None):
         await ctx.send(file=discord.File(fp=image_binary, filename=f"{hex_name}.png"), content=message)
 
 
-@bot.command(name="how", help="I HAVE TO KNOW")
-async def how(ctx):
-    # TODO: make voice commands more generic
+@bot.command(name="play", help="Available clips: how, peter, hey, sukapon")
+async def play(ctx, clip=None):
     if ctx.message.author.bot:
         return
 
+    if clip is None:
+        await ctx.channel.send("Bozo didn't give me a clip to play")
+        return
+
+    # TODO: refactor this, use a dictionary or something
+    file = "files/"
+    if clip == "how":
+        file += "riddler_how.mp3"
+    elif clip == "peter":
+        file += "peter.mp3"
+    elif clip == "hey":
+        file += "hey.mp3"
+    else:
+        file += "sukapon.mp3"
+
     user_voice_channel = ctx.message.author.voice.channel
     voice_client = await user_voice_channel.connect()
-    voice_client.play(discord.FFmpegPCMAudio("files/riddler_how.mp3"))
+    voice_client.play(discord.FFmpegPCMAudio(file))
     while voice_client.is_playing():
         await asyncio.sleep(1)
     await voice_client.disconnect()
+
 
 ##############################################################################################################
 ################################################# GAME INPUT #################################################
