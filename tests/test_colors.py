@@ -1,4 +1,4 @@
-from utils_colors import gen_from_pil, gen_from_xkcd, gen_from_rand, get_color_and_mode, rgb2hex, rgba2hex
+from utils.utils_colors import gen_from_pil, gen_from_xkcd, gen_from_rand, get_color_and_mode, rgb2hex, rgba2hex
 
 
 ### PIL Tests ###

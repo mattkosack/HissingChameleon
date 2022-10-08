@@ -3,8 +3,8 @@ import re
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands
-from utils import get_line, send_input
-from utils_colors import gen_from_pil, gen_from_xkcd, gen_from_rand, get_color_and_mode, get_hex
+from utils.utils import get_line, send_input
+from utils.utils_colors import gen_from_pil, gen_from_xkcd, gen_from_rand, get_color_and_mode, get_hex
 import random
 import io
 import asyncio
