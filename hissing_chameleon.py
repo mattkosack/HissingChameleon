@@ -3,11 +3,19 @@ import re
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands
-from utils import get_line, gen_from_pil, gen_from_xkcd, gen_from_rand, send_input, get_color_and_mode, rgb2hex, rgba2hex
+from utils import get_line, send_input
+from utils_colors import gen_from_pil, gen_from_xkcd, gen_from_rand, get_color_and_mode, get_hex
 import random
 import io
 import asyncio
-import time
+
+
+CLIPS = {
+    "how": "riddler_how.mp3",
+    "peter": "peter.mp3",
+    "hey": "hey.mp3",
+    "sukapon": "sukapon.mp3",
+}
 
 
 intents = discord.Intents.default()
@@ -51,26 +59,7 @@ async def name(ctx):
             title="Say my name", url="https://audio.pronouncekiwi.com/enNEW1/sukapon", description="Say it.")
         await ctx.channel.send(embed=embed)
     else:
-        # check if opus is installed
-        # find_lib = ctypes.util.find_library('opus')
-        # print(f"Find Opus: {find_lib}")
-        # print("Loading Opus")
-        # discord.opus.load_opus(find_lib)
-        # print(f"Discord - Is loaded: {discord.opus.is_loaded()}")
-
-        # TODO: Figure out a way to automatically find the file
-        # discord.opus.load_opus('/opt/homebrew/Cellar/opus/1.3.1/lib/libopus.dylib')
-
-        user_voice_channel = ctx.message.author.voice.channel
-        voice_client = await user_voice_channel.connect()
-        start = time.time()
-        voice_client.play(discord.FFmpegPCMAudio(
-            "https://audio.pronouncekiwi.com/enNEW1/sukapon"))
-        while voice_client.is_playing():
-            await asyncio.sleep(1)
-        stop = time.time()
-        print(f"Time: {stop-start}")
-        await voice_client.disconnect()
+        play("sukapon", ctx)
 
 
 @bot.command(name="leave", help="Makes the bot leave the voice channel")
@@ -131,13 +120,7 @@ async def color(ctx, *, color=None):
         img, name = gen_from_rand()
 
     if isinstance(color, tuple):
-        if mode == "RGB":
-            r, g, b = color
-            hex_name = rgb2hex(int(r), int(g), int(b))
-
-        elif mode == "RGBA":
-            r, g, b, a = color
-            hex_name = rgba2hex(int(r), int(g), int(b), int(a))
+        hex_name = get_hex(mode, color)
     else:
         hex_name = name
 
@@ -152,20 +135,11 @@ async def play(ctx, clip=None):
     if ctx.message.author.bot:
         return
 
-    if clip is None:
-        await ctx.channel.send("Bozo didn't give me a clip to play")
-        return
-
-    # TODO: refactor this, use a dictionary or something
     file = "files/"
-    if clip == "how":
-        file += "riddler_how.mp3"
-    elif clip == "peter":
-        file += "peter.mp3"
-    elif clip == "hey":
-        file += "hey.mp3"
+    if clip not in CLIPS.keys() or clip is None:
+        file += CLIPS["sukapon"]
     else:
-        file += "sukapon.mp3"
+        file += CLIPS[clip]
 
     user_voice_channel = ctx.message.author.voice.channel
     voice_client = await user_voice_channel.connect()
