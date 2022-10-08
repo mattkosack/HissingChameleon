@@ -146,6 +146,20 @@ async def color(ctx, *, color=None):
         image_binary.seek(0)
         await ctx.send(file=discord.File(fp=image_binary, filename=f"{hex_name}.png"), content=message)
 
+
+@bot.command(name="how", help="I HAVE TO KNOW")
+async def how(ctx):
+    # TODO: make voice commands more generic
+    if ctx.message.author.bot:
+        return
+
+    user_voice_channel = ctx.message.author.voice.channel
+    voice_client = await user_voice_channel.connect()
+    voice_client.play(discord.FFmpegPCMAudio("files/riddler_how.mp3"))
+    while voice_client.is_playing():
+        await asyncio.sleep(1)
+    await voice_client.disconnect()
+
 ##############################################################################################################
 ################################################# GAME INPUT #################################################
 ##############################################################################################################
