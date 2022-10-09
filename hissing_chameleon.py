@@ -15,6 +15,7 @@ CLIPS = {
     "peter": "peter.mp3",
     "hey": "hey.mp3",
     "sukapon": "sukapon.mp3",
+    "what": "what.m4a",
 }
 
 
