@@ -23,6 +23,8 @@ CLIPS = {
     "GX-jp": "GX-jp.mp3",
     "GX-jp-full": "GX-jp-full.mp3",
     "5Ds": "5Ds.mp3",
+    "hack": "kaiba-hack.mp3",
+    "toon": "toon-theme.mp3",
 }
 
 
