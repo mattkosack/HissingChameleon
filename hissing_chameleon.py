@@ -9,6 +9,17 @@ import random
 import io
 import asyncio
 
+"""
+TODO:
+- Kalin clips
+- Kalin quotes
+- Beautiful dragon
+- Schmaden
+- Jinzo
+- dasher on em
+- kaiba funny
+- I'm jack atlas
+"""
 
 CLIPS = {
     "how": "riddler_how.mp3",
@@ -172,68 +183,68 @@ async def play(ctx, clip=None):
 ##############################################################################################################
 
 
-@bot.command(name="up", help="Press up in the game")
-async def up(ctx):
-    if ctx.message.author.bot:
-        return
+# @bot.command(name="up", help="Press up in the game")
+# async def up(ctx):
+#     if ctx.message.author.bot:
+#         return
 
-    send_input(GAME_IP, GAME_PORT, "up")
-
-
-@bot.command(name="down", help="Press down in the game")
-async def down(ctx):
-    if ctx.message.author.bot:
-        return
-
-    send_input(GAME_IP, GAME_PORT, "down")
+#     send_input(GAME_IP, GAME_PORT, "up")
 
 
-@bot.command(name="left", help="Press left in the game")
-async def left(ctx):
-    if ctx.message.author.bot:
-        return
+# @bot.command(name="down", help="Press down in the game")
+# async def down(ctx):
+#     if ctx.message.author.bot:
+#         return
 
-    send_input(GAME_IP, GAME_PORT, "left")
-
-
-@bot.command(name="right", help="Press right in the game")
-async def right(ctx):
-    if ctx.message.author.bot:
-        return
-
-    send_input(GAME_IP, GAME_PORT, "right")
+#     send_input(GAME_IP, GAME_PORT, "down")
 
 
-@bot.command(name="a", help="Press a in the game")
-async def a(ctx):
-    if ctx.message.author.bot:
-        return
+# @bot.command(name="left", help="Press left in the game")
+# async def left(ctx):
+#     if ctx.message.author.bot:
+#         return
 
-    send_input(GAME_IP, GAME_PORT, "a")
-
-
-@bot.command(name="b", help="Press b in the game")
-async def b(ctx):
-    if ctx.message.author.bot:
-        return
-
-    send_input(GAME_IP, GAME_PORT, "b")
+#     send_input(GAME_IP, GAME_PORT, "left")
 
 
-@bot.command(name="start", help="Press start in the game")
-async def start(ctx):
-    if ctx.message.author.bot:
-        return
+# @bot.command(name="right", help="Press right in the game")
+# async def right(ctx):
+#     if ctx.message.author.bot:
+#         return
 
-    send_input(GAME_IP, GAME_PORT, "start")
+#     send_input(GAME_IP, GAME_PORT, "right")
 
 
-@bot.command(name="select", help="Press select in the game")
-async def select(ctx):
-    if ctx.message.author.bot:
-        return
+# @bot.command(name="a", help="Press a in the game")
+# async def a(ctx):
+#     if ctx.message.author.bot:
+#         return
 
-    send_input(GAME_IP, GAME_PORT, "select")
+#     send_input(GAME_IP, GAME_PORT, "a")
+
+
+# @bot.command(name="b", help="Press b in the game")
+# async def b(ctx):
+#     if ctx.message.author.bot:
+#         return
+
+#     send_input(GAME_IP, GAME_PORT, "b")
+
+
+# @bot.command(name="start", help="Press start in the game")
+# async def start(ctx):
+#     if ctx.message.author.bot:
+#         return
+
+#     send_input(GAME_IP, GAME_PORT, "start")
+
+
+# @bot.command(name="select", help="Press select in the game")
+# async def select(ctx):
+#     if ctx.message.author.bot:
+#         return
+
+#     send_input(GAME_IP, GAME_PORT, "select")
 
 ##############################################################################################################
 ##############################################################################################################
