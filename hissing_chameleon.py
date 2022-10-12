@@ -131,9 +131,14 @@ async def color(ctx, *, color=None):
         await ctx.send(file=discord.File(fp=image_binary, filename=f"{hex_name}.png"), content=message)
 
 
-@bot.command(name="play", help="Available clips: how, peter, hey, sukapon")
+@bot.command(name="play", help="Available clips: how, peter, hey, sukapon, what")
 async def play(ctx, clip=None):
     if ctx.message.author.bot:
+        return
+
+    user_voice_channel = ctx.message.author.voice.channel
+    if user_voice_channel is None:
+        await ctx.send("You are not in a voice channel")
         return
 
     file = "files/"
@@ -142,7 +147,6 @@ async def play(ctx, clip=None):
     else:
         file += CLIPS[clip]
 
-    user_voice_channel = ctx.message.author.voice.channel
     voice_client = await user_voice_channel.connect()
     voice_client.play(discord.FFmpegPCMAudio(file))
     while voice_client.is_playing():
