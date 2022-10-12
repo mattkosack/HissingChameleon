@@ -16,6 +16,13 @@ CLIPS = {
     "hey": "hey.mp3",
     "sukapon": "sukapon.mp3",
     "what": "what.m4a",
+    "DM": "DM.mp3",
+    "DM-full": "DM-full.mp3",
+    "GX": "GX.mp3",
+    # "GX-full": "GX-full.mp3",
+    "GX-jp": "GX-jp.mp3",
+    "GX-jp-full": "GX-jp-full.mp3",
+    "5Ds": "5Ds.mp3",
 }
 
 
@@ -131,7 +138,7 @@ async def color(ctx, *, color=None):
         await ctx.send(file=discord.File(fp=image_binary, filename=f"{hex_name}.png"), content=message)
 
 
-@bot.command(name="play", help="Available clips: how, peter, hey, sukapon, what")
+@bot.command(name="play", help=f"Available clips: {', '.join(CLIPS.keys())}")
 async def play(ctx, clip=None):
     if ctx.message.author.bot:
         return
