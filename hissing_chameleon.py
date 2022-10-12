@@ -144,9 +144,11 @@ async def play(ctx, clip=None):
 
     user_voice_channel = ctx.message.author.voice.channel
     voice_client = await user_voice_channel.connect()
+    await asyncio.sleep(0.5)
     voice_client.play(discord.FFmpegPCMAudio(file))
     while voice_client.is_playing():
         await asyncio.sleep(1)
+    await asyncio.sleep(1)
     await voice_client.disconnect()
 
 
