@@ -16,15 +16,16 @@ CLIPS = {
     "hey": "hey.mp3",
     "sukapon": "sukapon.mp3",
     "what": "what.m4a",
-    "DM": "DM.mp3",
-    "DM-full": "DM-full.mp3",
-    "GX": "GX.mp3",
+    "dm": "DM.mp3",
+    "dm-full": "DM-full.mp3",
+    "gx": "GX.mp3",
     # "GX-full": "GX-full.mp3",
-    "GX-jp": "GX-jp.mp3",
-    "GX-jp-full": "GX-jp-full.mp3",
-    "5Ds": "5Ds.mp3",
+    "gx-jp": "GX-jp.mp3",
+    "gx-jp-full": "GX-jp-full.mp3",
+    "5ds": "5Ds.mp3",
     "hack": "kaiba-hack.mp3",
     "toon": "toon-theme.mp3",
+    "ccapac-apu": "ccapac-apu.mp3",
 }
 
 
@@ -151,6 +152,8 @@ async def play(ctx, clip=None):
         return
 
     file = "files/"
+    if clip is not None:
+        clip = clip.lower()
     if clip not in CLIPS.keys() or clip is None:
         file += CLIPS["sukapon"]
     else:
