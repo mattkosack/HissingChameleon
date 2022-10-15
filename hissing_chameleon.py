@@ -19,7 +19,6 @@ TODO:
 - kaiba funny
 - I'm jack atlas
 - SUPREME KING I CHALLENGE YOU
-- I beg your pardon (bastion)
 - paradox brothers joey clocks
 - BLACK ROSE DRAGON
 - kaiba show me the god card
@@ -53,6 +52,9 @@ CLIPS = {
     "beautiful1": "beautiful1.mp3",
     "beautiful2": "beautiful2.mp3",
     "ap": "ap.mp3",
+    "booty": "booty.mp3",
+    "chazzitup": "chazzitup.mp3",
+    "challenge": "challenge.mp3"
 }
 
 
