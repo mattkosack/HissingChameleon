@@ -13,12 +13,25 @@ import asyncio
 TODO:
 - Kalin clips
 - Kalin quotes
-- Beautiful dragon
 - Schmaden
 - Jinzo
 - dasher on em
 - kaiba funny
 - I'm jack atlas
+- SUPREME KING I CHALLENGE YOU
+- I beg your pardon (bastion)
+- paradox brothers joey clocks
+- BLACK ROSE DRAGON
+- kaiba show me the god card
+- junk warrior poem (from two become one)
+- yugi boy
+- shadows and curtains
+- Sayer duel, carly and jack married
+- Jacky boi - dark signer carly
+- sayer dying
+- time to duel with a ghoul
+- synchro what
+
 """
 
 CLIPS = {
@@ -37,6 +50,8 @@ CLIPS = {
     "hack": "kaiba-hack.mp3",
     "toon": "toon-theme.mp3",
     "ccapac-apu": "ccapac-apu.mp3",
+    "beautiful1": "beautiful1.mp3",
+    "beautiful2": "beautiful2.mp3",
 }
 
 
