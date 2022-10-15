@@ -30,6 +30,9 @@ TODO:
 - sayer dying
 - time to duel with a ghoul
 - synchro what
+- master of faster
+- special sign
+- piercing
 
 """
 
@@ -54,7 +57,8 @@ CLIPS = {
     "ap": "ap.mp3",
     "booty": "booty.mp3",
     "chazzitup": "chazzitup.mp3",
-    "challenge": "challenge.mp3"
+    "challenge": "challenge.mp3",
+    "interested": "interested.mp3"
 }
 
 
