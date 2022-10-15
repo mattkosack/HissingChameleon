@@ -52,6 +52,7 @@ CLIPS = {
     "ccapac-apu": "ccapac-apu.mp3",
     "beautiful1": "beautiful1.mp3",
     "beautiful2": "beautiful2.mp3",
+    "ap": "ap.mp3",
 }
 
 
