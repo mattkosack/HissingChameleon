@@ -18,7 +18,6 @@ TODO:
 - dasher on em
 - kaiba funny
 - I'm jack atlas
-- SUPREME KING I CHALLENGE YOU
 - paradox brothers joey clocks
 - BLACK ROSE DRAGON
 - kaiba show me the god card
