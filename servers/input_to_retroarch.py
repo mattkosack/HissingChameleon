@@ -1,6 +1,7 @@
 from flask import Flask, request
-import uinput
 import time
+import pyautogui
+import pydirectinput
 
 
 def create_server():
@@ -17,42 +18,33 @@ def create_server():
 		didn't use shift or ctrl because I didn't want 
 		any weirdness with them.
 		"""
-		device = uinput.Device([
-			uinput.KEY_U,
-			uinput.KEY_D,
-			uinput.KEY_L,
-			uinput.KEY_R,
-			uinput.KEY_A,
-			uinput.KEY_B,
-			uinput.KEY_S,
-			uinput.KEY_D,
-		])
 		game_input = request.form['input']
 		print('Recieved Input: ' + game_input)
 		if game_input == 'up':
 			time.sleep(1)
-			device.emit_click(uinput.KEY_U)
+			pydirectinput.press('U')
 		elif game_input == 'down':
 			time.sleep(1)
-			device.emit_click(uinput.KEY_D)
+			pydirectinput.press('D')
 		elif game_input == 'left':
 			time.sleep(1)
-			device.emit_click(uinput.KEY_L)
+			pydirectinput.press('L')
 		elif game_input == 'right':
 			time.sleep(1)
-			device.emit_click(uinput.KEY_R)
+			pydirectinput.press('R')
 		elif game_input == 'a':
 			time.sleep(1)
-			device.emit_click(uinput.KEY_A)
+			pydirectinput.press('A')
 		elif game_input == 'b':
 			time.sleep(1)
-			device.emit_click(uinput.KEY_B)
+			pydirectinput.press('B')
 		elif game_input == 'start':
 			time.sleep(1)
-			device.emit_click(uinput.KEY_S)
+			pydirectinput.press('S')
 		elif game_input == 'select':
 			time.sleep(1)
-			device.emit_click(uinput.KEY_D)
+			pydirectinput.press('D')
+
 		else:
 			return 'Invalid Input'
 		return 'OK'
