@@ -241,14 +241,15 @@ async def add_clip(ctx, name, url, start, stop):
 
     try:
         if short_file:
-            append_to_csv("filename/CLIPS.csv", name, short_file)
+            append_to_csv("files/CLIPS.csv", name, short_file)
         else:
             await ctx.send("Error adding clip to list")
     except Exception as e:
         print(e)
         await ctx.send("Error adding clip to list")
 
-    await ctx.send("Successfully added clip")
+    if name in get_dict_from_csv("files/CLIPS.csv").keys():
+        await ctx.send("Clip added successfully")
 
 
 ##############################################################################################################
