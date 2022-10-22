@@ -4,6 +4,7 @@ import os
 
 def send_input(ip, port, data):
     url = f'http://{ip}:{port}/input'
+    # url = f'http://127.0.0.1:8080/input'
     requests.post(url, data=data)
 
 if __name__ == '__main__':

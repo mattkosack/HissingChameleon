@@ -3,13 +3,18 @@ import re
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands
-from utils.utils import get_line, send_input
+from utils.utils import get_line, send_input, get_dict_from_csv, add_clip_for_command
 from utils.utils_colors import gen_from_pil, gen_from_xkcd, gen_from_rand, get_color_and_mode, get_hex
 import random
 import io
 import asyncio
+from discord.ext import commands
+from pretty_help import PrettyHelp
 
 """
+TODO:
+Refactor the help and documentation
+
 TODO:
 - Kalin clips
 - Kalin quotes
@@ -32,38 +37,15 @@ TODO:
 - master of faster
 - special sign
 - piercing
-
+- Yugioh poems
+- riding duel
 """
-
-CLIPS = {
-    "how": "riddler_how.mp3",
-    "peter": "peter.mp3",
-    "hey": "hey.mp3",
-    "sukapon": "sukapon.mp3",
-    "what": "what.m4a",
-    "dm": "DM.mp3",
-    "dm-full": "DM-full.mp3",
-    "gx": "GX.mp3",
-    # "GX-full": "GX-full.mp3",
-    "gx-jp": "GX-jp.mp3",
-    "gx-jp-full": "GX-jp-full.mp3",
-    "5ds": "5Ds.mp3",
-    "hack": "kaiba-hack.mp3",
-    "toon": "toon-theme.mp3",
-    "ccapac-apu": "ccapac-apu.mp3",
-    "beautiful1": "beautiful1.mp3",
-    "beautiful2": "beautiful2.mp3",
-    "ap": "ap.mp3",
-    "booty": "booty.mp3",
-    "chazzitup": "chazzitup.mp3",
-    "challenge": "challenge.mp3",
-    "interested": "interested.mp3"
-}
 
 
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix="%", intents=intents)
+bot = commands.Bot(command_prefix="%", intents=intents,
+                   help_command=PrettyHelp())
 
 
 @bot.event
@@ -95,14 +77,16 @@ async def ping(ctx):
 async def name(ctx):
     if ctx.message.author.bot:
         return
-
-    if ctx.message.author.voice is None:
-        # url="https://audio.pronouncekiwi.com/enNEW1/sukapon" file="files/sukapon-sukapon.mp3"
-        embed = discord.Embed(
-            title="Say my name", url="https://audio.pronouncekiwi.com/enNEW1/sukapon", description="Say it.")
-        await ctx.channel.send(embed=embed)
-    else:
-        play("sukapon", ctx)
+    try:
+        if ctx.message.author.voice is None:
+            # url="https://audio.pronouncekiwi.com/enNEW1/sukapon" file="files/sukapon-sukapon.mp3"
+            embed = discord.Embed(
+                title="Say my name", url="https://audio.pronouncekiwi.com/enNEW1/sukapon", description="Say it.")
+            await ctx.channel.send(embed=embed)
+        else:
+            play("sukapon", ctx)
+    except Exception as e:
+        print(e)
 
 
 @bot.command(name="leave", help="Makes the bot leave the voice channel")
@@ -173,8 +157,12 @@ async def color(ctx, *, color=None):
         await ctx.send(file=discord.File(fp=image_binary, filename=f"{hex_name}.png"), content=message)
 
 
-@bot.command(name="play", help=f"Available clips: {', '.join(CLIPS.keys())}")
+@bot.command(name="play", help=f"Enter '%play <clip>' \nUse the %clips command to see a list of clips!")
 async def play(ctx, clip=None):
+    """
+    Arguments:
+        clip: The name of the clip to play
+    """
     if ctx.message.author.bot:
         return
 
@@ -183,89 +171,130 @@ async def play(ctx, clip=None):
         await ctx.send("You are not in a voice channel")
         return
 
+    clips = get_dict_from_csv('files/CLIPS.csv')
+
     file = "files/"
     if clip is not None:
         clip = clip.lower()
-    if clip not in CLIPS.keys() or clip is None:
-        file += CLIPS["sukapon"]
+    if clip not in clips.keys() or clip is None:
+        file += clips["sukapon"]
     else:
-        file += CLIPS[clip]
-
-    voice_client = await user_voice_channel.connect()
-    voice_client.play(discord.FFmpegPCMAudio(file))
-    while voice_client.is_playing():
+        file += clips[clip]
+    try:
+        voice_client = await user_voice_channel.connect()
+        voice_client.play(discord.FFmpegPCMAudio(file))
+        while voice_client.is_playing():
+            await asyncio.sleep(1)
         await asyncio.sleep(1)
-    await asyncio.sleep(1)
-    await voice_client.disconnect()
+        await voice_client.disconnect()
+    except Exception as e:
+        print(e)
 
+
+@bot.command(name="clips", help="Lists all the clips")
+async def clips(ctx):
+    if ctx.message.author.bot:
+        return
+
+    clips = get_dict_from_csv("files/CLIPS.csv")
+    embed = discord.Embed(
+        title="Clips", description="Here are all the clips I have")
+    message = ""
+    for i, key in enumerate(clips.keys()):
+        if i == len(clips.keys()) - 1:
+            message += key
+        else:
+            message += key + ", "
+    embed.add_field(name="Names", value=message)
+    await ctx.send(embed=embed)
+
+
+@bot.command(name="add_clip")
+async def add_clip(ctx, name, url, start, stop):
+    """
+    Adds a clip to the list of clips
+    Arguments:
+        name: Name of the clip
+        url: URL of the clip
+        start: Start time of the clip in HH:MM:SS format
+        stop: Stop time of the clip in HH:MM:SS format
+    """
+    if ctx.message.author.bot:
+        return
+
+    result = add_clip_for_command(name, url, start, stop)
+    if result:
+        await ctx.send("Successfully added clip")
+    else:
+        await ctx.send("Failed to add clip")
 
 ##############################################################################################################
 ################################################# GAME INPUT #################################################
 ##############################################################################################################
 
 
-@bot.command(name="up", help="Press up in the game")
-async def up(ctx):
-    if ctx.message.author.bot:
-        return
+# @bot.command(name="up", help="Press up in the game")
+# async def up(ctx):
+#     if ctx.message.author.bot:
+#         return
 
-    send_input(GAME_IP, GAME_PORT, "up")
-
-
-@bot.command(name="down", help="Press down in the game")
-async def down(ctx):
-    if ctx.message.author.bot:
-        return
-
-    send_input(GAME_IP, GAME_PORT, "down")
+#     send_input(GAME_IP, GAME_PORT, "up")
 
 
-@bot.command(name="left", help="Press left in the game")
-async def left(ctx):
-    if ctx.message.author.bot:
-        return
+# @bot.command(name="down", help="Press down in the game")
+# async def down(ctx):
+#     if ctx.message.author.bot:
+#         return
 
-    send_input(GAME_IP, GAME_PORT, "left")
-
-
-@bot.command(name="right", help="Press right in the game")
-async def right(ctx):
-    if ctx.message.author.bot:
-        return
-
-    send_input(GAME_IP, GAME_PORT, "right")
+#     send_input(GAME_IP, GAME_PORT, "down")
 
 
-@bot.command(name="a", help="Press a in the game")
-async def a(ctx):
-    if ctx.message.author.bot:
-        return
+# @bot.command(name="left", help="Press left in the game")
+# async def left(ctx):
+#     if ctx.message.author.bot:
+#         return
 
-    send_input(GAME_IP, GAME_PORT, "a")
-
-
-@bot.command(name="b", help="Press b in the game")
-async def b(ctx):
-    if ctx.message.author.bot:
-        return
-
-    send_input(GAME_IP, GAME_PORT, "b")
+#     send_input(GAME_IP, GAME_PORT, "left")
 
 
-@bot.command(name="start", help="Press start in the game")
-async def start(ctx):
-    if ctx.message.author.bot:
-        return
+# @bot.command(name="right", help="Press right in the game")
+# async def right(ctx):
+#     if ctx.message.author.bot:
+#         return
 
-    send_input(GAME_IP, GAME_PORT, "start")
+#     send_input(GAME_IP, GAME_PORT, "right")
 
 
-@bot.command(name="select", help="Press select in the game")
-async def select(ctx):
-    if ctx.message.author.bot:
-        return
+# @bot.command(name="a", help="Press a in the game")
+# async def a(ctx):
+#     if ctx.message.author.bot:
+#         return
 
-    send_input(GAME_IP, GAME_PORT, "select")
+#     send_input(GAME_IP, GAME_PORT, "a")
+
+
+# @bot.command(name="b", help="Press b in the game")
+# async def b(ctx):
+#     if ctx.message.author.bot:
+#         return
+
+#     send_input(GAME_IP, GAME_PORT, "b")
+
+
+# @bot.command(name="start", help="Press start in the game")
+# async def start(ctx):
+#     if ctx.message.author.bot:
+#         return
+
+#     send_input(GAME_IP, GAME_PORT, "start")
+
+
+# @bot.command(name="select", help="Press select in the game")
+# async def select(ctx):
+#     if ctx.message.author.bot:
+#         return
+
+#     send_input(GAME_IP, GAME_PORT, "select")
 
 ##############################################################################################################
 ##############################################################################################################

@@ -1,7 +1,7 @@
 from flask import Flask, request
 import time
-import pyautogui
-import pydirectinput
+from pyautogui import press
+
 
 
 def create_server():
@@ -20,31 +20,31 @@ def create_server():
 		"""
 		game_input = request.form['input']
 		print('Recieved Input: ' + game_input)
+
 		if game_input == 'up':
 			time.sleep(1)
-			pydirectinput.press('U')
+			press("U")
 		elif game_input == 'down':
 			time.sleep(1)
-			pydirectinput.press('D')
+			press("D")
 		elif game_input == 'left':
 			time.sleep(1)
-			pydirectinput.press('L')
+			press("L")
 		elif game_input == 'right':
 			time.sleep(1)
-			pydirectinput.press('R')
+			press("R")
 		elif game_input == 'a':
 			time.sleep(1)
-			pydirectinput.press('A')
+			press("A")
 		elif game_input == 'b':
 			time.sleep(1)
-			pydirectinput.press('B')
+			press("B")
 		elif game_input == 'start':
 			time.sleep(1)
-			pydirectinput.press('S')
+			press("S")
 		elif game_input == 'select':
 			time.sleep(1)
-			pydirectinput.press('D')
-
+			press("K")
 		else:
 			return 'Invalid Input'
 		return 'OK'
