@@ -226,6 +226,10 @@ async def add_clip(ctx, name, url, start, stop):
         await ctx.send("Clip name already exists")
         return
 
+    if os.path.isfile("files/" + name + ".mp3"):
+        await ctx.send("There is already a file with that name.")
+        return
+
     await ctx.send("Downloading clip. This step takes while.")
     try:
         download_from_yt(url, name)
