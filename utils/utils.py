@@ -55,5 +55,5 @@ def shorten_clip(name, start, stop):
         return None
 
     os.remove(full_clip)
-    return short_clip
+    return f'{name}.mp3'
 
