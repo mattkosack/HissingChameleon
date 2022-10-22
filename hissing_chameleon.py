@@ -3,7 +3,7 @@ import re
 from dotenv import load_dotenv
 import discord
 from discord.ext import commands
-from utils.utils import get_line, send_input, get_dict_from_csv, add_clip_for_command
+from utils.utils import get_line, send_input, get_dict_from_csv, download_from_yt, shorten_clip, append_to_csv
 from utils.utils_colors import gen_from_pil, gen_from_xkcd, gen_from_rand, get_color_and_mode, get_hex
 import random
 import io
@@ -222,11 +222,34 @@ async def add_clip(ctx, name, url, start, stop):
     if ctx.message.author.bot:
         return
 
-    result = add_clip_for_command(name, url, start, stop)
-    if result:
-        await ctx.send("Successfully added clip")
-    else:
-        await ctx.send("Failed to add clip")
+    if name in get_dict_from_csv("files/CLIPS.csv").keys():
+        await ctx.send("Clip name already exists")
+        return
+
+    await ctx.send("Downloading clip. This step takes while.")
+    try:
+        download_from_yt(url, name)
+    except Exception as e:
+        print(e)
+        await ctx.send("Error downloading clip")
+
+    try:
+        short_file = shorten_clip(name, start, stop)
+    except Exception as e:
+        print(e)
+        await ctx.send("Error shortening clip")
+
+    try:
+        if short_file:
+            append_to_csv("files/CLIPS.csv", name, short_file)
+        else:
+            await ctx.send("Error adding clip to list")
+    except Exception as e:
+        print(e)
+        await ctx.send("Error adding clip to list")
+
+    await ctx.send("Successfully added clip")
+
 
 ##############################################################################################################
 ################################################# GAME INPUT #################################################

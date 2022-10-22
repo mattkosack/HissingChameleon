@@ -57,25 +57,3 @@ def shorten_clip(name, start, stop):
     os.remove(full_clip)
     return short_clip
 
-
-def add_clip_for_command(name, url, start, stop):
-    try:
-        download_from_yt(url, name)
-    except Exception as e:
-        print(e)
-        return False
-    try:
-        short_file = shorten_clip(name, start, stop)
-    except Exception as e:
-        print(e)
-        return False
-    try:
-        if short_file:
-            append_to_csv('commands.csv', name, short_file)
-        else:
-            print('short file is None')
-            return False
-    except Exception as e:
-        print(e)
-        return False
-    return True
