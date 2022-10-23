@@ -28,7 +28,7 @@ def get_dict_from_csv(filename):
 
 def append_to_csv(filename, name, file):
     with open(filename, 'a') as f:
-        f.write(f'{name},{file}')
+        f.write(f'\n{name},{file}')
 
 
 def download_from_yt(url, name):
