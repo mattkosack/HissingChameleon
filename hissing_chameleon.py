@@ -230,30 +230,35 @@ async def add_clip(ctx, name, url, start, stop):
         await ctx.send("There is already a file with that name.")
         return
 
-    await ctx.send("Downloading clip. This step takes while.")
+    message = await ctx.send(":hourglass: Downloading clip. This step takes a while :hourglass: ")
     try:
         download_from_yt(url, name)
     except Exception as e:
         print(e)
-        await ctx.send("Error downloading clip")
+        await message.edit(content=":red_square: Error downloading clip :red_square:")
+    await message.edit(content=":white_check_mark: Clip downloaded. Now cutting :scissors:")
+    await asyncio.sleep(2)
 
     try:
         short_file = shorten_clip(name, start, stop)
     except Exception as e:
         print(e)
-        await ctx.send("Error shortening clip")
+        await message.edit(content=":red_square: Error shortening clip :red_square:")
+
+    await message.edit(content=":white_check_mark: Clip cut. Now adding to clips :clipboard:")
+    await asyncio.sleep(2)
 
     try:
         if short_file:
             append_to_csv("files/CLIPS.csv", name, short_file)
         else:
-            await ctx.send("Error adding clip to list")
+            await message.edit(content=":red_square: Error adding clip to list :red_square:")
     except Exception as e:
         print(e)
-        await ctx.send("Error adding clip to list")
+        await message.edit(content=":red_square: Error adding clip to list :red_square:")
 
     if name in get_dict_from_csv("files/CLIPS.csv").keys():
-        await ctx.send("Clip added successfully")
+        await message.edit(content=":white_check_mark: Clip added successfully :white_check_mark:")
 
 
 ##############################################################################################################
