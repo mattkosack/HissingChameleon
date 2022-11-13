@@ -307,7 +307,7 @@ async def start(ctx):
 
 if __name__ == "__main__":
     load_dotenv()
-    GAME_IP = os.getenv("IP")
-    GAME_PORT = os.getenv("PORT")
+    GAME_IP = os.getenv("SERVER_IP")
+    GAME_PORT = os.getenv("SERVER_PORT")
     token = os.getenv("DISCORD_TOKEN")
     bot.run(token)
