@@ -10,6 +10,10 @@ Everyone's got their own discord bot. Here's mine.
 
 ### Note: I stopped using Heroku for 2 main reasons: youtube-dl doesn't work so well there, and more importantly, Heroku will be discontinuing its free tier soon.
 
+# Quirks/Notes
+
+I run the stream and game on an ubuntu machine, apparently PyAutoGui doesn't work well with Wayland, so I had to switch to Xorg. See more [here](https://askubuntu.com/questions/1433002/ubuntu-gui-cant-take-virtual-keystrokes)
+
 
 # TODO
 

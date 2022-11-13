@@ -237,7 +237,7 @@ async def add_clip(ctx, name, url, start, stop):
 ##############################################################################################################
 
 
-@bot.command(name="up", help="Press up in the game")
+@bot.command(name="up", help="Press up in the game", aliases=["u"])
 async def up(ctx):
     if ctx.message.author.bot:
         return
@@ -245,7 +245,7 @@ async def up(ctx):
     send_input(GAME_IP, GAME_PORT, "up")
 
 
-@bot.command(name="down", help="Press down in the game")
+@bot.command(name="down", help="Press down in the game", aliases=["d"])
 async def down(ctx):
     if ctx.message.author.bot:
         return
@@ -253,7 +253,7 @@ async def down(ctx):
     send_input(GAME_IP, GAME_PORT, "down")
 
 
-@bot.command(name="left", help="Press left in the game")
+@bot.command(name="left", help="Press left in the game", aliases=["l"])
 async def left(ctx):
     if ctx.message.author.bot:
         return
@@ -261,7 +261,7 @@ async def left(ctx):
     send_input(GAME_IP, GAME_PORT, "left")
 
 
-@bot.command(name="right", help="Press right in the game")
+@bot.command(name="right", help="Press right in the game", aliases=["r"])
 async def right(ctx):
     if ctx.message.author.bot:
         return
@@ -285,20 +285,19 @@ async def b(ctx):
     send_input(GAME_IP, GAME_PORT, "b")
 
 
-@bot.command(name="start", help="Press start in the game")
+@bot.command(name="start", help="Press start in the game", aliases=["st"])
 async def start(ctx):
     if ctx.message.author.bot:
         return
 
     send_input(GAME_IP, GAME_PORT, "start")
 
-# I'll add this if I can figure out why retroarch isn't accepting inputs
-# @bot.command(name="select", help="Press select in the game")
-# async def select(ctx):
-#     if ctx.message.author.bot:
-#         return
+@bot.command(name="select", help="Press select in the game", aliases=["sel"])
+async def select(ctx):
+    if ctx.message.author.bot:
+        return
 
-#     send_input(GAME_IP, GAME_PORT, "select")
+    send_input(GAME_IP, GAME_PORT, "select")
 
 ##############################################################################################################
 ##############################################################################################################
