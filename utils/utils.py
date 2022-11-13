@@ -15,8 +15,8 @@ def get_line(file_name):
 
 def send_input(ip, port, data):
     url = f'http://{ip}:{port}/input'
-    print(f"Sending {data} to: {url}")
-    requests.post(url, data=data)
+    dict_data = {'input': data}
+    requests.post(url, data=dict_data)
 
 
 def get_dict_from_csv(filename):
