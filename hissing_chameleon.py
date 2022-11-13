@@ -11,35 +11,6 @@ import asyncio
 from discord.ext import commands
 from pretty_help import PrettyHelp
 
-"""
-TODO:
-Refactor the help and documentation
-
-TODO:
-- Kalin clips
-- Kalin quotes
-- Schmaden
-- Jinzo
-- dasher on em
-- kaiba funny
-- I'm jack atlas
-- paradox brothers joey clocks
-- BLACK ROSE DRAGON
-- kaiba show me the god card
-- junk warrior poem (from two become one)
-- yugi boy
-- shadows and curtains
-- Sayer duel, carly and jack married
-- Jacky boi - dark signer carly
-- sayer dying
-- time to duel with a ghoul
-- synchro what
-- master of faster
-- special sign
-- piercing
-- Yugioh poems
-- riding duel
-"""
 
 
 intents = discord.Intents.default()
@@ -266,62 +237,62 @@ async def add_clip(ctx, name, url, start, stop):
 ##############################################################################################################
 
 
-# @bot.command(name="up", help="Press up in the game")
-# async def up(ctx):
-#     if ctx.message.author.bot:
-#         return
+@bot.command(name="up", help="Press up in the game")
+async def up(ctx):
+    if ctx.message.author.bot:
+        return
 
-#     send_input(GAME_IP, GAME_PORT, "up")
-
-
-# @bot.command(name="down", help="Press down in the game")
-# async def down(ctx):
-#     if ctx.message.author.bot:
-#         return
-
-#     send_input(GAME_IP, GAME_PORT, "down")
+    send_input(GAME_IP, GAME_PORT, "up")
 
 
-# @bot.command(name="left", help="Press left in the game")
-# async def left(ctx):
-#     if ctx.message.author.bot:
-#         return
+@bot.command(name="down", help="Press down in the game")
+async def down(ctx):
+    if ctx.message.author.bot:
+        return
 
-#     send_input(GAME_IP, GAME_PORT, "left")
-
-
-# @bot.command(name="right", help="Press right in the game")
-# async def right(ctx):
-#     if ctx.message.author.bot:
-#         return
-
-#     send_input(GAME_IP, GAME_PORT, "right")
+    send_input(GAME_IP, GAME_PORT, "down")
 
 
-# @bot.command(name="a", help="Press a in the game")
-# async def a(ctx):
-#     if ctx.message.author.bot:
-#         return
+@bot.command(name="left", help="Press left in the game")
+async def left(ctx):
+    if ctx.message.author.bot:
+        return
 
-#     send_input(GAME_IP, GAME_PORT, "a")
-
-
-# @bot.command(name="b", help="Press b in the game")
-# async def b(ctx):
-#     if ctx.message.author.bot:
-#         return
-
-#     send_input(GAME_IP, GAME_PORT, "b")
+    send_input(GAME_IP, GAME_PORT, "left")
 
 
-# @bot.command(name="start", help="Press start in the game")
-# async def start(ctx):
-#     if ctx.message.author.bot:
-#         return
+@bot.command(name="right", help="Press right in the game")
+async def right(ctx):
+    if ctx.message.author.bot:
+        return
 
-#     send_input(GAME_IP, GAME_PORT, "start")
+    send_input(GAME_IP, GAME_PORT, "right")
 
 
+@bot.command(name="a", help="Press a in the game")
+async def a(ctx):
+    if ctx.message.author.bot:
+        return
+
+    send_input(GAME_IP, GAME_PORT, "a")
+
+
+@bot.command(name="b", help="Press b in the game")
+async def b(ctx):
+    if ctx.message.author.bot:
+        return
+
+    send_input(GAME_IP, GAME_PORT, "b")
+
+
+@bot.command(name="start", help="Press start in the game")
+async def start(ctx):
+    if ctx.message.author.bot:
+        return
+
+    send_input(GAME_IP, GAME_PORT, "start")
+
+# I'll add this if I can figure out why retroarch isn't accepting inputs
 # @bot.command(name="select", help="Press select in the game")
 # async def select(ctx):
 #     if ctx.message.author.bot:
