@@ -15,6 +15,7 @@ def get_line(file_name):
 
 def send_input(ip, port, data):
     url = f'http://{ip}:{port}/input'
+    print(f"Sending to: {url}")
     requests.post(url, data=data)
 
 
