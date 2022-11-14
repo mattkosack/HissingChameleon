@@ -7,10 +7,10 @@ from utils.utils import get_line, send_input, get_dict_from_csv, download_from_y
 from utils.utils_colors import gen_from_pil, gen_from_xkcd, gen_from_rand, get_color_and_mode, get_hex
 import random
 import io
+import time
 import asyncio
 from discord.ext import commands
 from pretty_help import PrettyHelp
-
 
 
 intents = discord.Intents.default()
@@ -251,6 +251,7 @@ async def up(ctx, number_of_times=1):
 
     for _ in range(number_of_times):
         send_input(GAME_IP, GAME_PORT, "up")
+        time.sleep(0.5)
 
 
 @bot.command(name="down", help="Press down in the game", aliases=["d"])
@@ -260,6 +261,7 @@ async def down(ctx, number_of_times=1):
 
     for _ in range(number_of_times):
         send_input(GAME_IP, GAME_PORT, "down")
+        time.sleep(0.5)
 
 
 @bot.command(name="left", help="Press left in the game", aliases=["l"])
@@ -269,6 +271,7 @@ async def left(ctx, number_of_times=1):
 
     for _ in range(number_of_times):
         send_input(GAME_IP, GAME_PORT, "left")
+        time.sleep(0.5)
 
 
 @bot.command(name="right", help="Press right in the game", aliases=["r"])
@@ -278,6 +281,7 @@ async def right(ctx, number_of_times=1):
 
     for _ in range(number_of_times):
         send_input(GAME_IP, GAME_PORT, "right")
+        time.sleep(0.5)
 
 
 @bot.command(name="a", help="Press a in the game")
@@ -287,6 +291,7 @@ async def a(ctx, number_of_times=1):
 
     for _ in range(number_of_times):
         send_input(GAME_IP, GAME_PORT, "a")
+        time.sleep(0.5)
 
 
 @bot.command(name="b", help="Press b in the game")
@@ -296,6 +301,7 @@ async def b(ctx, number_of_times=1):
 
     for _ in range(number_of_times):
         send_input(GAME_IP, GAME_PORT, "b")
+        time.sleep(0.5)
 
 
 @bot.command(name="start", help="Press start in the game", aliases=["st"])
@@ -305,6 +311,8 @@ async def start(ctx, number_of_times=1):
 
     for _ in range(number_of_times):
         send_input(GAME_IP, GAME_PORT, "start")
+        time.sleep(0.5)
+
 
 @bot.command(name="select", help="Press select in the game", aliases=["sel"])
 async def select(ctx, number_of_times=1):
@@ -313,6 +321,7 @@ async def select(ctx, number_of_times=1):
 
     for _ in range(number_of_times):
         send_input(GAME_IP, GAME_PORT, "select")
+        time.sleep(0.5)
 
 ##############################################################################################################
 ##############################################################################################################
