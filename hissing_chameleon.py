@@ -245,66 +245,74 @@ async def stream(ctx):
 
 
 @bot.command(name="up", help="Press up in the game", aliases=["u"])
-async def up(ctx):
+async def up(ctx, number_of_times=1):
     if ctx.message.author.bot:
         return
 
-    send_input(GAME_IP, GAME_PORT, "up")
+    for _ in range(number_of_times):
+        send_input(GAME_IP, GAME_PORT, "up")
 
 
 @bot.command(name="down", help="Press down in the game", aliases=["d"])
-async def down(ctx):
+async def down(ctx, number_of_times=1):
     if ctx.message.author.bot:
         return
 
-    send_input(GAME_IP, GAME_PORT, "down")
+    for _ in range(number_of_times):
+        send_input(GAME_IP, GAME_PORT, "down")
 
 
 @bot.command(name="left", help="Press left in the game", aliases=["l"])
-async def left(ctx):
+async def left(ctx, number_of_times=1):
     if ctx.message.author.bot:
         return
 
-    send_input(GAME_IP, GAME_PORT, "left")
+    for _ in range(number_of_times):
+        send_input(GAME_IP, GAME_PORT, "left")
 
 
 @bot.command(name="right", help="Press right in the game", aliases=["r"])
-async def right(ctx):
+async def right(ctx, number_of_times=1):
     if ctx.message.author.bot:
         return
 
-    send_input(GAME_IP, GAME_PORT, "right")
+    for _ in range(number_of_times):
+        send_input(GAME_IP, GAME_PORT, "right")
 
 
 @bot.command(name="a", help="Press a in the game")
-async def a(ctx):
+async def a(ctx, number_of_times=1):
     if ctx.message.author.bot:
         return
 
-    send_input(GAME_IP, GAME_PORT, "a")
+    for _ in range(number_of_times):
+        send_input(GAME_IP, GAME_PORT, "a")
 
 
 @bot.command(name="b", help="Press b in the game")
-async def b(ctx):
+async def b(ctx, number_of_times=1):
     if ctx.message.author.bot:
         return
 
-    send_input(GAME_IP, GAME_PORT, "b")
+    for _ in range(number_of_times):
+        send_input(GAME_IP, GAME_PORT, "b")
 
 
 @bot.command(name="start", help="Press start in the game", aliases=["st"])
-async def start(ctx):
+async def start(ctx, number_of_times=1):
     if ctx.message.author.bot:
         return
 
-    send_input(GAME_IP, GAME_PORT, "start")
+    for _ in range(number_of_times):
+        send_input(GAME_IP, GAME_PORT, "start")
 
 @bot.command(name="select", help="Press select in the game", aliases=["sel"])
-async def select(ctx):
+async def select(ctx, number_of_times=1):
     if ctx.message.author.bot:
         return
 
-    send_input(GAME_IP, GAME_PORT, "select")
+    for _ in range(number_of_times):
+        send_input(GAME_IP, GAME_PORT, "select")
 
 ##############################################################################################################
 ##############################################################################################################
