@@ -12,12 +12,13 @@ Everyone's got their own discord bot. Here's mine.
 
 # Quirks/Notes
 
-I run the stream and game on an ubuntu machine, apparently PyAutoGui doesn't work well with Wayland, so I had to switch to Xorg. See more [here](https://askubuntu.com/questions/1433002/ubuntu-gui-cant-take-virtual-keystrokes)
+I run the stream and game on an ubuntu machine, apparently PyAutoGui doesn't work with Wayland, so I had to switch to Xorg. See more [here](https://askubuntu.com/questions/1433002/ubuntu-gui-cant-take-virtual-keystrokes)
+
+can't use PyAutoGui press, need to use keydown and keyup
 
 
 # TODO
 
-* Need to figure out why PyAutoGUI (and the various other input libraries) are not sending input to Retroarch
 * Refactor the documentation because 'discord-pretty-help' will make it look nice in the chat
 * General refactoring, some stuff can be further de-coupled
     * It's not *terrible* but it could be better

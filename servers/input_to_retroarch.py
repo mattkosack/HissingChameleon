@@ -1,7 +1,5 @@
 from flask import Flask, request
-import time
-from pyautogui import press
-
+from pyautogui import press, keyDown, keyUp
 
 
 def create_server():
@@ -16,31 +14,38 @@ def create_server():
 		game_input = request.form['input']
 		print('Recieved Input: ' + game_input)
 
-		# These inputs should work for 'Pokewild'
 		if game_input == 'up':
-			time.sleep(1)
-			press("up")
+			keyDown('up')
+			keyUp('up')
+
 		elif game_input == 'down':
-			time.sleep(1)
-			press("down")
+			keyDown("down")
+			keyUp("down")
+
+
 		elif game_input == 'left':
-			time.sleep(1)
-			press("left")
+			keyDown("left")
+			keyUp("left")
+
 		elif game_input == 'right':
-			time.sleep(1)
-			press("right")
+			keyDown("right")
+			keyUp("right")
+
 		elif game_input == 'a':
-			time.sleep(1)
-			press("z")
+			keyDown("z")
+			keyUp("z")
+
 		elif game_input == 'b':
-			time.sleep(1)
-			press("x")
+			keyDown("x")
+			keyUp("x")
+
 		elif game_input == 'start':
-			time.sleep(1)
-			press("enter")
+			keyDown("enter")
+			keyUp("enter")
+
 		elif game_input == 'select':
-			time.sleep(1)
-			press("c")
+			keyDown("c")
+			keyUp("c")
 		else:
 			return 'Invalid Input'
 		return 'OK'
