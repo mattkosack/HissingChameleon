@@ -236,6 +236,13 @@ async def add_clip(ctx, name, url, start, stop):
 ################################################# GAME INPUT #################################################
 ##############################################################################################################
 
+@bot.command(name="stream", help="Get the stream link")
+async def stream(ctx):
+    if ctx.message.author.bot:
+        return
+
+    await ctx.send("https://www.twitch.tv/hissingchameleon")
+
 
 @bot.command(name="up", help="Press up in the game", aliases=["u"])
 async def up(ctx):
