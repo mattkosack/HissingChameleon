@@ -24,6 +24,8 @@ can't use PyAutoGui press, need to use keydown and keyup
     * It's not *terrible* but it could be better
 * More color format support would be nice
     * I think python has support for color conversion, or its getting it
+* Use machine learning project to generate color from text.
+   * this is basically the reverse of how it works now, but it could be interesting to grab the exact color from the sources I have, or generate one "from scratch"
 
 # Quotes to add
 - Kalin clips
