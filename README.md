@@ -29,6 +29,9 @@ can't use PyAutoGui press, need to use keydown and keyup
 * Some sort of queue system for the clips commands
     * one for playing clips and one for adding clips
 
+* Maybe do something with openai/gpt-3
+    * The obvious thing is just return a response from a given prompt, but people can easily do that, and I also don't want to constantly burn my API calls
+
 # Quotes to add
 - Kalin clips
 - Kalin quotes

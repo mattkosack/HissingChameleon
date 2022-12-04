@@ -171,7 +171,7 @@ async def clips(ctx):
     embed = discord.Embed(
         title="Clips", description="Here are all the clips I have")
     message = ""
-    for i, key in enumerate(clips.keys()):
+    for i, key in enumerate(sorted(clips.keys())):
         if i == len(clips.keys()) - 1:
             message += key
         else:
@@ -194,11 +194,11 @@ async def add_clip(ctx, name, url, start, stop):
         return
 
     if name in get_dict_from_csv("files/CLIPS.csv").keys():
-        await ctx.send("Clip name already exists")
+        await ctx.send(":red_square: Clip name already exists! :red_square:")
         return
 
     if os.path.isfile("files/" + name + ".mp3"):
-        await ctx.send("There is already a file with that name.")
+        await ctx.send(":red_square: There is already a file with that name! :red_square:")
         return
 
     message = await ctx.send(":hourglass: Downloading clip. This step takes a while :hourglass: ")
@@ -207,7 +207,7 @@ async def add_clip(ctx, name, url, start, stop):
     except Exception as e:
         print(e)
         await message.edit(content=":red_square: Error downloading clip :red_square:")
-    await message.edit(content=":white_check_mark: Clip downloaded. Now cutting :scissors:")
+    await message.edit(content=":scissors: Clip downloaded. Now cutting :scissors:")
     await asyncio.sleep(2)
 
     try:
@@ -216,7 +216,7 @@ async def add_clip(ctx, name, url, start, stop):
         print(e)
         await message.edit(content=":red_square: Error shortening clip :red_square:")
 
-    await message.edit(content=":white_check_mark: Clip cut. Now adding to clips :clipboard:")
+    await message.edit(content=":clipboard: Clip cut. Now adding to list of clips :clipboard:")
     await asyncio.sleep(2)
 
     try:
@@ -231,6 +231,30 @@ async def add_clip(ctx, name, url, start, stop):
     if name in get_dict_from_csv("files/CLIPS.csv").keys():
         await message.edit(content=":white_check_mark: Clip added successfully :white_check_mark:")
 
+
+@bot.command(name="remove_clip")
+async def remove_clip(ctx, name):
+    """
+    Removes a clip from the list of clips
+    Arguments:
+        name: Name of the clip
+    """
+    if ctx.message.author.bot:
+        return
+
+    if ctx.message.author.id != 314409619361628160:
+        await ctx.send("You do not have permission to use this command")
+        return
+
+    clips = get_dict_from_csv("files/CLIPS.csv")
+    if name not in clips.keys():
+        await ctx.send("Clip name does not exist")
+        return
+
+    try:
+        os.remove("files/" + clips[name])
+    except Exception as e:
+        print(e)
 
 ##############################################################################################################
 ################################################# GAME INPUT #################################################
