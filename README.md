@@ -26,6 +26,8 @@ can't use PyAutoGui press, need to use keydown and keyup
     * I think python has support for color conversion, or its getting it
 * Use machine learning project to generate color from text.
    * this is basically the reverse of how it works now, but it could be interesting to grab the exact color from the sources I have, or generate one "from scratch"
+* Some sort of queue system for the clips commands
+    * one for playing clips and one for adding clips
 
 # Quotes to add
 - Kalin clips
