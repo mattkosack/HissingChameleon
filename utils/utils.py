@@ -58,3 +58,6 @@ def shorten_clip(name, start, stop):
     os.remove(full_clip)
     return f'{name}.mp3'
 
+def remove_name_from_csv(filepath, name):
+    # TODO:
+    ...
