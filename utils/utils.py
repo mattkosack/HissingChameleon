@@ -41,6 +41,7 @@ def download_from_yt(url, name):
             'preferredcodec': 'mp3',
         }],
         'keepvideo': False,
+        'verbose': True,
     }
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         ydl.download([url])
