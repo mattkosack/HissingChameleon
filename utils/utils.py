@@ -64,13 +64,10 @@ def remove_name_from_csv(file_path, string_to_delete):
     with open(file_path, 'r') as file, open('temporary_files/temp.txt', 'w') as new_file:
         for line in file:
             # Line should exactly match this
-            print(repr(line))
             if f"{string_to_delete},{string_to_delete}.mp3\n" == line:
                 continue
             new_file.write(line)
-    
     file.close()
     new_file.close()
 
     os.replace('temporary_files/temp.txt', file_path)
-

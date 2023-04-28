@@ -255,7 +255,11 @@ async def remove_clip(ctx, name):
     except Exception as e:
         print(e)
 
-    remove_name_from_csv("files/CLIPS.csv", name)
+    try:
+        remove_name_from_csv("files/CLIPS.csv", name)
+        await ctx.send("Clip removed successfully")
+    except Exception as e:
+        print(e)
 
 
 @bot.command(name="stream", help="Get the stream link")
