@@ -4,6 +4,7 @@ import csv
 import youtube_dl
 import os
 import subprocess
+import yt_dlp
 # import ffmpeg
 
 
@@ -43,7 +44,8 @@ def download_from_yt(url, name):
         'keepvideo': False,
         'verbose': True,
     }
-    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    # with youtube_dl.YoutubeDL(ydl_opts) as ydl: // Fix hasn't been merged
         ydl.download([url])
 
 
