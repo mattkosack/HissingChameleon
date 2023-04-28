@@ -1,7 +1,6 @@
 import requests
 import random
 import csv
-import youtube_dl
 import os
 import subprocess
 import yt_dlp
@@ -45,7 +44,6 @@ def download_from_yt(url, name):
         'verbose': True,
     }
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-    # with youtube_dl.YoutubeDL(ydl_opts) as ydl: // Fix hasn't been merged
         ydl.download([url])
 
 
@@ -61,6 +59,18 @@ def shorten_clip(name, start, stop):
     os.remove(full_clip)
     return f'{name}.mp3'
 
-def remove_name_from_csv(filepath, name):
-    # TODO:
-    ...
+
+def remove_name_from_csv(file_path, string_to_delete):
+    with open(file_path, 'r') as file, open('temporary_files/temp.txt', 'w') as new_file:
+        for line in file:
+            # Line should exactly match this
+            print(repr(line))
+            if f"{string_to_delete},{string_to_delete}.mp3\n" == line:
+                continue
+            new_file.write(line)
+    
+    file.close()
+    new_file.close()
+
+    os.replace('temporary_files/temp.txt', file_path)
+

@@ -50,7 +50,6 @@ async def name(ctx):
         return
     try:
         if ctx.message.author.voice is None:
-            # url="https://audio.pronouncekiwi.com/enNEW1/sukapon" file="files/sukapon-sukapon.mp3"
             embed = discord.Embed(
                 title="Say my name", url="https://audio.pronouncekiwi.com/enNEW1/sukapon", description="Say it.")
             await ctx.channel.send(embed=embed)
@@ -258,100 +257,55 @@ async def remove_clip(ctx, name):
 
     remove_name_from_csv("files/CLIPS.csv", name)
 
-##############################################################################################################
-################################################# GAME INPUT #################################################
-##############################################################################################################
 
 @bot.command(name="stream", help="Get the stream link")
 async def stream(ctx):
+    """
+    Sends the stream link
+    """
     if ctx.message.author.bot:
         return
 
     await ctx.send("https://www.twitch.tv/hissingchameleon")
 
 
-@bot.command(name="up", help="Press up in the game", aliases=["u"])
-async def up(ctx, number_of_times=1):
+@bot.command(name="game", help="Send a command to the game", aliases=["g", "gm"])
+async def move(ctx, command, number_of_times=1):
+    """
+    Sends a command to the game
+    Arguments:
+        command: The command to send to the game. Can be up, down, left, right, a, b, start, select.
+                (Alternatively, u, d, l, r, a, b, st, se)
+        number_of_times: The number of times to send the command. Default is 1
+    """
+    
     if ctx.message.author.bot:
         return
-
-    for _ in range(number_of_times):
-        send_input(GAME_IP, GAME_PORT, "up")
-        time.sleep(0.5)
-
-
-@bot.command(name="down", help="Press down in the game", aliases=["d"])
-async def down(ctx, number_of_times=1):
-    if ctx.message.author.bot:
+    
+    command = command.lower()
+    commands = {
+        "up": "up",
+        "u": "up",
+        "down": "down",
+        "d": "down",
+        "left": "left",
+        "l": "left",
+        "right": "right",
+        "r": "right",
+        "a": "a",
+        "b": "b",
+        "start": "start",
+        "st": "start",
+        "select": "select",
+        "se": "select"
+    }
+    if command not in commands.keys():
+        await ctx.send("Invalid command")
         return
-
-    for _ in range(number_of_times):
-        send_input(GAME_IP, GAME_PORT, "down")
-        time.sleep(0.5)
-
-
-@bot.command(name="left", help="Press left in the game", aliases=["l"])
-async def left(ctx, number_of_times=1):
-    if ctx.message.author.bot:
-        return
-
-    for _ in range(number_of_times):
-        send_input(GAME_IP, GAME_PORT, "left")
-        time.sleep(0.5)
-
-
-@bot.command(name="right", help="Press right in the game", aliases=["r"])
-async def right(ctx, number_of_times=1):
-    if ctx.message.author.bot:
-        return
-
-    for _ in range(number_of_times):
-        send_input(GAME_IP, GAME_PORT, "right")
-        time.sleep(0.5)
-
-
-@bot.command(name="a", help="Press a in the game")
-async def a(ctx, number_of_times=1):
-    if ctx.message.author.bot:
-        return
-
-    for _ in range(number_of_times):
-        send_input(GAME_IP, GAME_PORT, "a")
-        time.sleep(0.5)
-
-
-@bot.command(name="b", help="Press b in the game")
-async def b(ctx, number_of_times=1):
-    if ctx.message.author.bot:
-        return
-
-    for _ in range(number_of_times):
-        send_input(GAME_IP, GAME_PORT, "b")
-        time.sleep(0.5)
-
-
-@bot.command(name="start", help="Press start in the game", aliases=["st"])
-async def start(ctx, number_of_times=1):
-    if ctx.message.author.bot:
-        return
-
-    for _ in range(number_of_times):
-        send_input(GAME_IP, GAME_PORT, "start")
-        time.sleep(0.5)
-
-
-@bot.command(name="select", help="Press select in the game", aliases=["sel"])
-async def select(ctx, number_of_times=1):
-    if ctx.message.author.bot:
-        return
-
-    for _ in range(number_of_times):
-        send_input(GAME_IP, GAME_PORT, "select")
-        time.sleep(0.5)
-
-##############################################################################################################
-##############################################################################################################
-##############################################################################################################
+    else:
+        for _ in range(number_of_times):
+            send_input(GAME_IP, GAME_PORT, commands[command])
+            time.sleep(0.5)
 
 
 if __name__ == "__main__":
