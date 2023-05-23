@@ -1,7 +1,7 @@
 PyNaCl==1.5
 discord.py[voice]==2.0
 python-dotenv==0.20.0
-requests==2.28.0
+requests==2.31.0
 Pillow==9.3.0
 PyAutoGUI==0.9.53
 flask==2.3.2
