@@ -241,7 +241,7 @@ async def remove_clip(ctx, name):
     if ctx.message.author.bot:
         return
 
-    if ctx.message.author.id != 314409619361628160:
+    if ctx.message.author.id != os.getenv("OWNER_ID"):
         await ctx.send("You do not have permission to use this command")
         return
 

@@ -5,11 +5,19 @@ import os
 import subprocess
 import yt_dlp
 # import ffmpeg
+import logging
+
+
+logging.basicConfig(filename='bot.log', encoding='utf-8', level=logging.ERROR)
 
 
 def get_line(file_name):
-    with open(file_name) as f:
-        lines = f.readlines()
+    try:
+        with open(file_name) as f:
+            lines = f.readlines()
+    except Exception as e:
+        logging.error(e)
+        return None
     return random.choice(lines)
 
 
@@ -43,8 +51,12 @@ def download_from_yt(url, name):
         'keepvideo': False,
         'verbose': True,
     }
-    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-        ydl.download([url])
+    try:
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([url])
+    except Exception as e:
+        logging.error(e)
+        return None
 
 
 def shorten_clip(name, start, stop):
@@ -53,7 +65,8 @@ def shorten_clip(name, start, stop):
     try:
         subprocess.call(['ffmpeg', '-i', full_clip, '-ss', start, '-to', stop, '-c', 'copy', short_clip])
     except Exception as e:
-        print(e)
+        logging.error(e)
+        os.remove(full_clip)
         return None
 
     os.remove(full_clip)
