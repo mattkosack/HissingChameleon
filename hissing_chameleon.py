@@ -63,6 +63,7 @@ async def name(ctx):
 async def leave(ctx):
     print("Disconnecting")
     await ctx.voice_client.disconnect()
+    print("Disconnected")
 
 
 @bot.command(name="frakes", help="asks you a question")
