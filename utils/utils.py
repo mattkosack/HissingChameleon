@@ -74,6 +74,7 @@ def shorten_clip(name, start, stop):
 
 
 def remove_name_from_csv(file_path, string_to_delete):
+    # TODO: i think there's a bug here, but I'm too lazy to fix rn
     with open(file_path, 'r') as file, open('temporary_files/temp.txt', 'w') as new_file:
         for line in file:
             # Line should exactly match this
