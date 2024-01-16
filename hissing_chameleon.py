@@ -11,8 +11,9 @@ import time
 import asyncio
 from discord.ext import commands
 from pretty_help import PrettyHelp
+import requests
 
-
+CHUNK_SIZE = 1024
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="%", intents=intents,
@@ -151,6 +152,74 @@ async def play(ctx, clip=None):
         file += clips["sukapon"]
     else:
         file += clips[clip]
+    try:
+        voice_client = await user_voice_channel.connect()
+        voice_client.play(discord.FFmpegPCMAudio(file))
+        while voice_client.is_playing():
+            await asyncio.sleep(1)
+        await asyncio.sleep(1)
+        await voice_client.disconnect()
+    except Exception as e:
+        print(e)
+
+
+@bot.command(name="say", help=f"Enter '%say <voice> <text>'")
+async def say(ctx, voice=None, text=None):
+    """
+    Please don't abuse this, I am literally paying for it. When my amount of text runs out, that's it.
+
+    Args:
+        voice: Voice to use. You can currently only select dracula 
+        text: the text you want it to say
+    """
+    if ctx.message.author.bot:
+        return
+    
+    user_voice_channel = ctx.message.author.voice.channel
+    if user_voice_channel is None:
+        await ctx.send("You are not in a voice channel")
+        return
+
+    if text is None:
+        await ctx.send("You must enter text to say")
+        return
+    
+    voices = {"dracula": ...}
+
+    if voice.lower() not in voices.keys() or voice is None:
+        await ctx.send("Invalid voice")
+        return
+    
+    url = f"https://api.elevenlabs.io/v1/text-to-speech/{voices[voice.lower()]}"
+    headers = {
+        "Accept": "audio/mpeg",
+        "Content-Type": "application/json",
+        "xi-api-key": "<xi-api-key>"
+    }
+
+    data = {
+        "text": text,
+        "model_id": "elven_turbo_v2",
+        # "voice_settings": {
+        #     "stability": 0.5,
+        #     "similarity_boost": 0.5
+        # }
+    }
+    
+    # Write the file
+    try:
+        response = requests.post(url, json=data, headers=headers)
+        file = f"files/{text[:10]}.mp3"
+        with open(file, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=CHUNK_SIZE):
+                if chunk:
+                    f.write(chunk)
+
+    except Exception as e:
+        print(e)
+        return
+
+    # read the file
     try:
         voice_client = await user_voice_channel.connect()
         voice_client.play(discord.FFmpegPCMAudio(file))
