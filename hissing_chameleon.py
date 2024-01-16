@@ -211,7 +211,7 @@ async def say(ctx, voice=None, *, text=None):
 
     with open(file, "wb") as f:
         f.write(audio)
-    asyncio.sleep(2)
+    await asyncio.sleep(2)
 
     try:
         voice_client = await user_voice_channel.connect()
