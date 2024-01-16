@@ -184,7 +184,7 @@ async def say(ctx, voice=None, text=None):
         await ctx.send("You must enter text to say")
         return
     
-    voices = {"dracula": ...}
+    voices = {"dracula-flow": ...}
 
     if voice.lower() not in voices.keys() or voice is None:
         await ctx.send("Invalid voice")
