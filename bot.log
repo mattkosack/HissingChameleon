@@ -2063,3 +2063,5 @@ INFO:discord.gateway:Shard ID None has successfully RESUMED session 613c271bfccd
 INFO:discord.gateway:Shard ID None has successfully RESUMED session 613c271bfccd75187a41deb2e4c6800d.
 INFO:discord.gateway:Shard ID None has successfully RESUMED session 613c271bfccd75187a41deb2e4c6800d.
 INFO:discord.gateway:Shard ID None has successfully RESUMED session 613c271bfccd75187a41deb2e4c6800d.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 62d0e5ea10f8e20dd07b88fae689a217).

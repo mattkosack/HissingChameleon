@@ -1,0 +1,12 @@
+[Unit]
+Description=HissingChameleonBot
+After=multi-user.target
+
+[Service]
+Type=simple
+User=matt
+#Restart=always
+ExecStart=/usr/bin/python3 /home/matt/HissingChameleon/hissing_chameleon.py
+WorkingDirectory=/home/matt/HissingChameleon
+[Install]
+WantedBy=multi-user.target
