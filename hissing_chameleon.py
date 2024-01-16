@@ -194,12 +194,12 @@ async def say(ctx, voice=None, text=None):
     headers = {
         "Accept": "audio/mpeg",
         "Content-Type": "application/json",
-        "xi-api-key": "<xi-api-key>"
+        "xi-api-key": os.getenv("VOICE_TOKEN")
     }
 
     data = {
         "text": text,
-        "model_id": "elven_turbo_v2",
+        "model_id": "eleven_turbo_v2",
         # "voice_settings": {
         #     "stability": 0.5,
         #     "similarity_boost": 0.5
