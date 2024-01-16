@@ -2,7 +2,7 @@ PyNaCl==1.5
 discord.py[voice]==2.0
 python-dotenv==0.20.0
 requests==2.31.0
-Pillow==9.3.0
+Pillow==10.0.1
 PyAutoGUI==0.9.53
 flask==2.3.2
 pytest==7.1.3
@@ -10,5 +10,5 @@ PyDirectInput==1.0.4
 python-libxdo==0.1.2a1
 discord-pretty-help==1.3.4
 openai==0.25.0
-yt-dlp==2023.7.6
+yt-dlp==2023.11.14
 # python-uinput==0.11.2
