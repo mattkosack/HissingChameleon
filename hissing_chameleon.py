@@ -55,7 +55,7 @@ async def name(ctx):
                 title="Say my name", url="https://audio.pronouncekiwi.com/enNEW1/sukapon", description="Say it.")
             await ctx.channel.send(embed=embed)
         else:
-            play("sukapon", ctx)
+            await play("sukapon", ctx)
     except Exception as e:
         print(e)
 
@@ -216,8 +216,8 @@ async def say(ctx, voice=None, *, text=None):
     try:
         voice_client = await user_voice_channel.connect()
         voice_client.play(discord.FFmpegPCMAudio(file))
-        # while voice_client.is_playing():
-        #     await asyncio.sleep(1)
+        while voice_client.is_playing():
+            await asyncio.sleep(1)
         await asyncio.sleep(1)
         await voice_client.disconnect()
     except Exception as e:
