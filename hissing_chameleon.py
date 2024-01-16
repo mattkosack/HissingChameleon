@@ -11,7 +11,7 @@ import time
 import asyncio
 from discord.ext import commands
 from pretty_help import PrettyHelp
-import requests
+from elevenlabs import generate, stream, set_api_key
 
 CHUNK_SIZE = 1024
 intents = discord.Intents.default()
@@ -163,6 +163,10 @@ async def play(ctx, clip=None):
         print(e)
 
 
+def text_stream(text):
+    yield text
+
+
 @bot.command(name="say", help=f"Enter '%say <voice> <text>'")
 async def say(ctx, voice=None, text=None):
     """
@@ -190,39 +194,18 @@ async def say(ctx, voice=None, text=None):
         await ctx.send("Invalid voice")
         return
     
-    url = f"https://api.elevenlabs.io/v1/text-to-speech/{voices[voice.lower()]}"
-    headers = {
-        "Accept": "audio/mpeg",
-        "Content-Type": "application/json",
-        "xi-api-key": os.getenv("VOICE_TOKEN")
-    }
-
-    data = {
-        "text": text,
-        "model_id": "eleven_turbo_v2",
-        # "voice_settings": {
-        #     "stability": 0.5,
-        #     "similarity_boost": 0.5
-        # }
-    }
+    set_api_key(os.getenv("ELEVEN_API_KEY"))
+    audio_stream = generate(
+        text=text_stream(f"{text + ' '}"),
+        voice="dracula-flow",
+        model="eleven_monolingual_v1",
+        stream=True
+    )
     
-    # Write the file
-    try:
-        response = requests.post(url, json=data, headers=headers)
-        file = f"files/{text[:10]}.mp3"
-        with open(file, 'wb') as f:
-            for chunk in response.iter_content(chunk_size=CHUNK_SIZE):
-                if chunk:
-                    f.write(chunk)
-
-    except Exception as e:
-        print(e)
-        return
-
     # read the file
     try:
         voice_client = await user_voice_channel.connect()
-        voice_client.play(discord.FFmpegPCMAudio(file))
+        voice_client.play(discord.FFmpegPCMAudio(stream(audio_stream)))
         while voice_client.is_playing():
             await asyncio.sleep(1)
         await asyncio.sleep(1)
