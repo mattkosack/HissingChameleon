@@ -2091,3 +2091,158 @@ Traceback (most recent call last):
   File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 199, in wrapped
     raise CommandInvokeError(exc) from exc
 discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: str expected, not NoneType
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 1940105d5de78f166fc575c75665973d).
+ERROR:discord.ext.commands.bot:Ignoring exception in command say
+Traceback (most recent call last):
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 190, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/hissing_chameleon.py", line 197, in say
+    set_api_key(os.getenv("ELEVEN_API_KEY"))
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/elevenlabs/simple.py", line 17, in set_api_key
+    os.environ["ELEVEN_API_KEY"] = api_key
+  File "/opt/homebrew/Cellar/python@3.10/3.10.10_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/os.py", line 685, in __setitem__
+    value = self.encodevalue(value)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.10_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/os.py", line 757, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not NoneType
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1347, in invoke
+    await ctx.command.invoke(ctx)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 986, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 199, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: str expected, not NoneType
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: bca91d9c3eea5b4dbcd27d353b8e40b2).
+ERROR:discord.ext.commands.bot:Ignoring exception in command say
+Traceback (most recent call last):
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 190, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/hissing_chameleon.py", line 197, in say
+    set_api_key(os.getenv("ELEVEN_API_KEY"))
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/elevenlabs/simple.py", line 17, in set_api_key
+    os.environ["ELEVEN_API_KEY"] = api_key
+  File "/opt/homebrew/Cellar/python@3.10/3.10.10_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/os.py", line 685, in __setitem__
+    value = self.encodevalue(value)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.10_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/os.py", line 757, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not NoneType
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1347, in invoke
+    await ctx.command.invoke(ctx)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 986, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 199, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: str expected, not NoneType
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: a0da54a4450a8eba8bc6aa507ac3ad7e).
+ERROR:discord.ext.commands.bot:Ignoring exception in command say
+Traceback (most recent call last):
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 190, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/hissing_chameleon.py", line 197, in say
+    set_api_key(os.getenv("ELEVEN_API_KEY"))
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/elevenlabs/simple.py", line 17, in set_api_key
+    os.environ["ELEVEN_API_KEY"] = api_key
+  File "/opt/homebrew/Cellar/python@3.10/3.10.10_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/os.py", line 685, in __setitem__
+    value = self.encodevalue(value)
+  File "/opt/homebrew/Cellar/python@3.10/3.10.10_1/Frameworks/Python.framework/Versions/3.10/lib/python3.10/os.py", line 757, in encode
+    raise TypeError("str expected, not %s" % type(value).__name__)
+TypeError: str expected, not NoneType
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1347, in invoke
+    await ctx.command.invoke(ctx)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 986, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 199, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: str expected, not NoneType
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 60e4516b9dd5d0ba336675871981bed7).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+WARNING:discord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: cec17f31faeb0ae2024c1c3473fafa98).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+WARNING:discord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 572a6471362a3c3b1727ed6416cccdaa).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 4af47a6b314d5c946c4044b6e1e0453b).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: e6333777b791e7d5f9bcc2d9a2366f4a).
+ERROR:discord.ext.commands.bot:Ignoring exception in command say
+Traceback (most recent call last):
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 190, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/hissing_chameleon.py", line 213, in say
+    f.write(str(audio))
+TypeError: a bytes-like object is required, not 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1347, in invoke
+    await ctx.command.invoke(ctx)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 986, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 199, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: a bytes-like object is required, not 'str'
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 55639c01bb33b9c82e841607883f728f).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+WARNING:discord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: b4849fac2fc48a0c49f02c1b91b603da).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: bddf9564cf60c7bd45cb04065864c3c8).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+WARNING:discord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 82e7f8539260ea1da5d69c9459224d68).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 251d43a47b6b6de3ebfca9e223080cce).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 008e019d4c6676f01fdf84682173061b).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+WARNING:discord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)

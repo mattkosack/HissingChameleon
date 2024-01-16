@@ -11,7 +11,7 @@ import time
 import asyncio
 from discord.ext import commands
 from pretty_help import PrettyHelp
-from elevenlabs import generate, stream, set_api_key
+from elevenlabs import generate, stream, set_api_key, Voice, VoiceSettings
 
 CHUNK_SIZE = 1024
 intents = discord.Intents.default()
@@ -168,7 +168,7 @@ def text_stream(text):
 
 
 @bot.command(name="say", help=f"Enter '%say <voice> <text>'")
-async def say(ctx, voice=None, text=None):
+async def say(ctx, voice=None, *, text=None):
     """
     Please don't abuse this, I am literally paying for it. When my amount of text runs out, that's it.
 
@@ -188,24 +188,34 @@ async def say(ctx, voice=None, text=None):
         await ctx.send("You must enter text to say")
         return
     
-    voices = {"dracula-flow": ...}
+    voices = {"dracula-flow": 'SgVqBdjSh7wz8k4LdDFt'}
 
     if voice.lower() not in voices.keys() or voice is None:
         await ctx.send("Invalid voice")
         return
     
-    set_api_key(os.getenv("ELEVEN_API_KEY"))
-    audio_stream = generate(
-        text=text_stream(f"{text + ' '}"),
-        voice="dracula-flow",
-        model="eleven_monolingual_v1",
-        stream=True
+    set_api_key(os.getenv("VOICE_TOKEN"))
+
+    audio = generate(
+        text=f"{text + ' '}",
+        voice=Voice(
+            voice_id=voices[voice.lower()],
+            settings=VoiceSettings(stability=0.50, similarity_boost=0.5, style=0.75, use_speaker_boost=True)
+        )
     )
 
-    # read the file
+
+    file = f"files/{'_'.join(text.split(' '))}.mp3"
+    while os.path.isfile(file):
+        file = file[:-4] + "_.mp3"
+
+    with open(file, "wb") as f:
+        f.write(audio)
+    asyncio.sleep(2)
+
     try:
         voice_client = await user_voice_channel.connect()
-        voice_client.play(discord.FFmpegPCMAudio(source=audio_stream))
+        voice_client.play(discord.FFmpegPCMAudio(file))
         while voice_client.is_playing():
             await asyncio.sleep(1)
         await asyncio.sleep(1)
