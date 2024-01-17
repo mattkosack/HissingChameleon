@@ -196,7 +196,7 @@ async def say(ctx, voice=None, *, text=None):
         text=f"{text + ' '}",
         voice=Voice(
             voice_id=voices[voice.lower()],
-            settings=VoiceSettings(stability=0.50, similarity_boost=0.5, style=0.75, use_speaker_boost=True)
+            settings=VoiceSettings(stability=0.50, similarity_boost=0.75, style=0.75, use_speaker_boost=True)
         )
     )
 
