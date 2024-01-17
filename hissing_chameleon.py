@@ -238,7 +238,7 @@ async def say(ctx, voice=None, *, text=None):
     while os.path.isfile(file):
         file = file[:-4] + "_.mp3"
 
-    append_to_csv("ai_files/CLIPS.csv", file[:-4], file)
+    append_to_csv("ai_files/CLIPS.csv", file[8:-4], file)
 
     with open(file, "wb") as f:
         f.write(audio)
