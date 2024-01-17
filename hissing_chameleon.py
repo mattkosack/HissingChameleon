@@ -154,17 +154,13 @@ async def play(ctx, clip=None):
         file += clips[clip]
     try:
         voice_client = await user_voice_channel.connect()
-        voice_client.play(discord.FFmpegPCMAudio(file))
+        voice_client.play(discord.FFmpegPCMAudio(file), after=lambda e: print('done', e))
         while voice_client.is_playing():
             await asyncio.sleep(1)
         await asyncio.sleep(1)
-        await voice_client.disconnect()
+        await voice_client.disconnect(force=True)
     except Exception as e:
         print(e)
-
-
-def text_stream(text):
-    yield text
 
 
 @bot.command(name="say", help=f"Enter '%say <voice> <text>'")
@@ -204,7 +200,6 @@ async def say(ctx, voice=None, *, text=None):
         )
     )
 
-
     file = f"files/{'_'.join(text.split(' '))}.mp3"
     while os.path.isfile(file):
         file = file[:-4] + "_.mp3"
@@ -215,11 +210,11 @@ async def say(ctx, voice=None, *, text=None):
 
     try:
         voice_client = await user_voice_channel.connect()
-        voice_client.play(discord.FFmpegPCMAudio(file))
+        voice_client.play(discord.FFmpegPCMAudio(file), after=lambda e: print('done', e))
         while voice_client.is_playing():
             await asyncio.sleep(1)
         await asyncio.sleep(1)
-        await voice_client.disconnect()
+        await voice_client.disconnect(force=True)
     except Exception as e:
         print(e)
 
