@@ -179,7 +179,7 @@ async def plai(ctx, clip=None):
 
     clips = get_dict_from_csv('ai_files/CLIPS.csv')
 
-    # file = "ai_files/"
+    file = ""
     if clip is not None:
         clip = clip.lower()
     if clip not in clips.keys() or clip is None:
@@ -230,7 +230,7 @@ async def say(ctx, voice=None, *, text=None):
         text=f"{text + ' '}",
         voice=Voice(
             voice_id=voices[voice.lower()],
-            settings=VoiceSettings(stability=0.10, similarity_boost=1.0, style=1.0, use_speaker_boost=True)
+            settings=VoiceSettings(stability=0.3, similarity_boost=1.0, style=1.0, use_speaker_boost=True)
         )
     )
 
