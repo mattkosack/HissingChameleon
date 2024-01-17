@@ -163,6 +163,40 @@ async def play(ctx, clip=None):
         print(e)
 
 
+@bot.command(name="plai", help=f"Enter '%plai <clip>' \nUse the %clips command to see a list of clips!")
+async def plai(ctx, clip=None):
+    """
+    Arguments:
+        clip: The name of the clip to play
+    """
+    if ctx.message.author.bot:
+        return
+
+    user_voice_channel = ctx.message.author.voice.channel
+    if user_voice_channel is None:
+        await ctx.send("You are not in a voice channel")
+        return
+
+    clips = get_dict_from_csv('ai_files/CLIPS.csv')
+
+    file = "ai_files/"
+    if clip is not None:
+        clip = clip.lower()
+    if clip not in clips.keys() or clip is None:
+        file += clips["sukapon"]
+    else:
+        file += clips[clip]
+    try:
+        voice_client = await user_voice_channel.connect()
+        voice_client.play(discord.FFmpegPCMAudio(file), after=lambda e: print('done', e))
+        while voice_client.is_playing():
+            await asyncio.sleep(1)
+        await asyncio.sleep(1)
+        await voice_client.disconnect(force=True)
+    except Exception as e:
+        print(e)
+
+
 @bot.command(name="say", help=f"Enter '%say <voice> <text>'")
 async def say(ctx, voice=None, *, text=None):
     """
@@ -200,9 +234,11 @@ async def say(ctx, voice=None, *, text=None):
         )
     )
 
-    file = f"files/{'_'.join(text.split(' '))}.mp3"
+    file = f"ai_files/{'_'.join(text.split(' '))}.mp3"
     while os.path.isfile(file):
         file = file[:-4] + "_.mp3"
+
+    append_to_csv("ai_files/CLIPS.csv", file[:-4], file)
 
     with open(file, "wb") as f:
         f.write(audio)
@@ -219,12 +255,15 @@ async def say(ctx, voice=None, *, text=None):
         print(e)
 
 
-@bot.command(name="clips", help="Lists all the clips")
-async def clips(ctx):
+@bot.command(name="clips", help="Do %clips True to see the AI clips")
+async def clips(ctx, ai=False):
     if ctx.message.author.bot:
         return
 
-    clips = get_dict_from_csv("files/CLIPS.csv")
+    if ai:
+        clips = get_dict_from_csv("ai_files/CLIPS.csv")
+    else:
+        clips = get_dict_from_csv("files/CLIPS.csv")
     embed = discord.Embed(
         title="Clips", description="Here are all the clips I have")
     message = ""
