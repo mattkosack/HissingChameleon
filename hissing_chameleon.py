@@ -179,7 +179,7 @@ async def plai(ctx, clip=None):
 
     clips = get_dict_from_csv('ai_files/CLIPS.csv')
 
-    file = "ai_files/"
+    # file = "ai_files/"
     if clip is not None:
         clip = clip.lower()
     if clip not in clips.keys() or clip is None:
@@ -238,7 +238,7 @@ async def say(ctx, voice=None, *, text=None):
     while os.path.isfile(file):
         file = file[:-4] + "_.mp3"
 
-    append_to_csv("ai_files/CLIPS.csv", file[8:-4], file)
+    append_to_csv("ai_files/CLIPS.csv", file[9:-4], file)
 
     with open(file, "wb") as f:
         f.write(audio)
