@@ -196,6 +196,17 @@ async def plai(ctx, clip=None):
     except Exception as e:
         print(e)
 
+@bot.command(name="settings")
+async def settings(ctx):
+    set_api_key(os.getenv("VOICE_TOKEN"))
+
+    # get settings for a voice
+    voice = Voice(
+            voice_id="p4jjAqAwxwpAlO7aOtwN",
+            model="eleven_multilingual_v2"
+        )
+    await ctx.send(voice.settings)
+
 
 @bot.command(name="say", help=f"Enter '%say <voice> <text>'")
 async def say(ctx, voice=None, *, text=None):
@@ -223,10 +234,10 @@ async def say(ctx, voice=None, *, text=None):
             "SgVqBdjSh7wz8k4LdDFt",
             VoiceSettings(stability=0.3, similarity_boost=0.7, style=0.1, use_speaker_boost=True)
         ],
-        "slade": [
-            "p4jjAqAwxwpAlO7aOtwN",
-            VoiceSettings(stability=0.3, similarity_boost=1.0, style=1.0, use_speaker_boost=True)
-        ],
+        # "slade": [
+        #     "p4jjAqAwxwpAlO7aOtwN",
+        #     VoiceSettings(stability=0.4, similarity_boost=0.05, style=0.00, use_speaker_boost=True)
+        # ],
         "knightley": [
             "FlfhdBnyCUhiIX7oaWOD",
             VoiceSettings(stability=0.3, similarity_boost=1.0, style=1.0, use_speaker_boost=True)
@@ -247,7 +258,8 @@ async def say(ctx, voice=None, *, text=None):
         text=f"{text + ' '}",
         voice=Voice(
             voice_id=voices[voice.lower()][0],
-            settings=voices[voice.lower()][1]
+            settings=voices[voice.lower()][1],
+            model="eleven_multilingual_v2"
         )
     )
 

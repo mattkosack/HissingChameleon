@@ -3998,3 +3998,129 @@ INFO:discord.voice_client:The voice handshake is being terminated for Channel ID
 INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
 INFO:discord.client:logging in using static token
 INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 37b4e0a0961368fe8b1839e92ccd8b6f).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 4828dbddce9d0cfc509b6c81d2937964).
+ERROR:discord.ext.commands.bot:Ignoring exception in command say
+Traceback (most recent call last):
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/hissing_chameleon.py", line 228, in say
+    VoiceSettings(use_speaker_boost=True)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/pydantic/main.py", line 164, in __init__
+    __pydantic_self__.__pydantic_validator__.validate_python(data, self_instance=__pydantic_self__)
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for VoiceSettings
+stability
+  Field required [type=missing, input_value={'use_speaker_boost': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+similarity_boost
+  Field required [type=missing, input_value={'use_speaker_boost': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValidationError: 2 validation errors for VoiceSettings
+stability
+  Field required [type=missing, input_value={'use_speaker_boost': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+similarity_boost
+  Field required [type=missing, input_value={'use_speaker_boost': True}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.5/v/missing
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 4618d6aefbcf1b6bbf53014b85868c9c).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark1185.discord.media
+INFO:discord.player:ffmpeg process 7763 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 12dff31276a9bd0d283ed0aaafed866a).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark1185.discord.media
+INFO:discord.player:ffmpeg process 7881 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 2d3529dace67f82c17f17d70013c844f).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark3721.discord.media
+INFO:discord.player:ffmpeg process 8010 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: c15135e5fc2b228b457f803f14da98f7).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark3721.discord.media
+INFO:discord.player:ffmpeg process 8094 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: d236787b3ad40d09b6214d371d5c89d5).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark3721.discord.media
+INFO:discord.player:ffmpeg process 8181 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: b9c422a73b5dd61ca4c93051f1bf6c34).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark3721.discord.media
+INFO:discord.player:ffmpeg process 8273 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: d2f97082390fa6289314c8bf95d2a10e).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark3721.discord.media
+INFO:discord.player:ffmpeg process 8360 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 4b2b2119526f84711d5ac19b14d675c9).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark3721.discord.media
+INFO:discord.player:ffmpeg process 8447 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 1b7529e31d8fa60da5df5ccedc1009e9).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 71d997e06ec29ec4df791bff0863fefa).
+ERROR:discord.ext.commands.bot:Ignoring exception in command settings
+Traceback (most recent call last):
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/hissing_chameleon.py", line 208, in settings
+    await ctx.send(voice.settings)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/context.py", line 1024, in send
+    return await super().send(
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/Users/matthewkosack/Desktop/Projects/HissingChameleon/.venv/lib/python3.10/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50006): Cannot send an empty message
