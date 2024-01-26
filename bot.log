@@ -2246,3 +2246,1755 @@ INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
 INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
 WARNING:discord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
 INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 352bf96b173ef4f7995bf8ee0c884c8c).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 996d0a448472027bf93727d38c1d8cf8).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+WARNING:discord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 4f50439df797e2c8f5da880c05a77d63).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: e7c00ac4c0bc5424c1c9a60bf7d082a7).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 1007c9e0ab5bb7ed77684321c3b71864).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+ERROR:discord.ext.commands.bot:Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "play_clip" is not found
+ERROR:discord.ext.commands.bot:Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "clip" is not found
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 6ac8265c3c64f465b27f8f44c943bdf1).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark435.discord.media
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: e06025ddea23d45da50802f03c37d885).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark8801.discord.media
+WARNING:discord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 3410e698d08a90ceafaa09325d70dcb7).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark8801.discord.media
+WARNING:discord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: ddfdcd779a09c3394363809c10be1b45).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark8801.discord.media
+INFO:discord.player:ffmpeg process 277171 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 0d58a9fdb16584397a8bcfa5a3446b4f).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark8801.discord.media
+INFO:discord.player:ffmpeg process 277465 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 977a04b6029801c9f9a50c3422985d55).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark8801.discord.media
+INFO:discord.player:ffmpeg process 280385 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: debb56d12353f05404e4f44aaa9bcfc2).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark8801.discord.media
+INFO:discord.player:ffmpeg process 280898 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark8801.discord.media
+INFO:discord.player:ffmpeg process 281095 successfully terminated with return code of 1.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 0d8c197d8c1c25a1d4d57975ae415e57).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark8801.discord.media
+INFO:discord.player:ffmpeg process 281646 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark8801.discord.media
+INFO:discord.player:ffmpeg process 281744 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 7790ae8d6b91ee43294f96295a463a62).
+ERROR:discord.ext.commands.bot:Ignoring exception in command plai
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/ext/commands/core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+  File "/home/matt/HissingChameleon/hissing_chameleon.py", line 188, in plai
+    file += clips[clip]
+UnboundLocalError: local variable 'file' referenced before assignment
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/ext/commands/bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/ext/commands/core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/ext/commands/core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: UnboundLocalError: local variable 'file' referenced before assignment
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: befb6fe70b5ede3c85d5a2da3a67b524).
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark8801.discord.media
+INFO:discord.player:ffmpeg process 282732 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark8801.discord.media
+INFO:discord.player:ffmpeg process 282817 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: e30107ac1b2e2a90365aec05cd07ed4c).
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: f41d9917742dbab92b536e78db152e26).
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+ERROR:discord.client:Attempting a reconnect in 1.84s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+ERROR:discord.client:Attempting a reconnect in 1.27s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark343.discord.media
+INFO:discord.player:ffmpeg process 872582 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 990784409407979655 (Guild ID 990784408770478140)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark343.discord.media
+INFO:discord.player:ffmpeg process 872679 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 990784409407979655 (Guild ID 990784408770478140)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+ERROR:discord.client:Attempting a reconnect in 1.94s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+INFO:discord.gateway:Shard ID None has successfully RESUMED session f41d9917742dbab92b536e78db152e26.
+WARNING:discord.gateway:Can't keep up, shard ID None websocket is 18.1s behind.
+ERROR:discord.client:Attempting a reconnect in 1.71s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+ERROR:discord.client:Attempting a reconnect in 3.91s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 5.77s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+ERROR:discord.client:Attempting a reconnect in 16.42s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+ERROR:discord.client:Attempting a reconnect in 31.46s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+ERROR:discord.client:Attempting a reconnect in 75.12s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+ERROR:discord.client:Attempting a reconnect in 219.09s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+ERROR:discord.client:Attempting a reconnect in 146.24s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 172.32s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 145.82s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+ERROR:discord.client:Attempting a reconnect in 394.89s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+ERROR:discord.client:Attempting a reconnect in 475.12s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+ERROR:discord.client:Attempting a reconnect in 186.18s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 560, in _request
+    await resp.start(conn)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client_reqrep.py", line 899, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/streams.py", line 616, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 492, in wait_for
+    fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 494, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+INFO:discord.gateway:Shard ID None session has been invalidated.
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 0fff716b0dd5e3d8c09a3385732470c2).
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+ERROR:discord.client:Attempting a reconnect in 0.82s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark6245.discord.media
+INFO:discord.player:ffmpeg process 1562269 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 694981097934553162 (Guild ID 694981097934553158)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 0fff716b0dd5e3d8c09a3385732470c2.
+ERROR:discord.client:Attempting a reconnect in 1.45s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+ERROR:discord.client:Attempting a reconnect in 0.66s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1175, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 980, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 1081, in create_connection
+    transport, protocol = await self._create_connection_transport(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 1111, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 492, in wait_for
+    fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 494, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+INFO:discord.gateway:Shard ID None session has been invalidated.
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: e79a8843047ca4b5b99ca5ebd102c9d6).
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+ERROR:discord.client:Attempting a reconnect in 0.55s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+ERROR:discord.client:Attempting a reconnect in 1.22s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+ERROR:discord.client:Attempting a reconnect in 7.70s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Name or service not known]
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session e79a8843047ca4b5b99ca5ebd102c9d6.
+ERROR:discord.client:Attempting a reconnect in 1.79s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 1.11s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 5.68s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 3.88s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 5.77s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 54.09s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 77.33s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 249.28s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 274.91s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 191.75s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 1011.07s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+INFO:discord.gateway:Shard ID None session has been invalidated.
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 67d2cc0d3d9d9e0c13c7a9df2dbed4ba).
+INFO:discord.gateway:Shard ID None has successfully RESUMED session 67d2cc0d3d9d9e0c13c7a9df2dbed4ba.
+ERROR:discord.client:Attempting a reconnect in 1.54s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1175, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 980, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 1041, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 955, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.9/asyncio/selector_events.py", line 502, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 492, in wait_for
+    fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 494, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+ERROR:discord.client:Attempting a reconnect in 2.80s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1175, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 980, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 1041, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 955, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.9/asyncio/selector_events.py", line 502, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 492, in wait_for
+    fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 494, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+ERROR:discord.client:Attempting a reconnect in 2.40s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1175, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 980, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 1041, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 955, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.9/asyncio/selector_events.py", line 502, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 492, in wait_for
+    fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 494, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+ERROR:discord.client:Attempting a reconnect in 6.50s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1175, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 980, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 1041, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 955, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.9/asyncio/selector_events.py", line 502, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 492, in wait_for
+    fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 494, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+ERROR:discord.client:Attempting a reconnect in 12.71s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1175, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 980, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 1041, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 955, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.9/asyncio/selector_events.py", line 502, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 492, in wait_for
+    fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 494, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+ERROR:discord.client:Attempting a reconnect in 62.78s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1175, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 980, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 1041, in create_connection
+    sock = await self._connect_sock(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 955, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.9/asyncio/selector_events.py", line 502, in sock_connect
+    return await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 492, in wait_for
+    fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 494, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+ERROR:discord.client:Attempting a reconnect in 10.88s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 193.95s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 399.08s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+ERROR:discord.client:Attempting a reconnect in 461.83s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+INFO:discord.gateway:Shard ID None session has been invalidated.
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 1a07b0457feb2da8bff46c683ad092a6).
+ERROR:discord.client:Attempting a reconnect in 654.33s
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1152, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/client.py", line 656, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/usr/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/gateway.py", line 372, in from_client
+    socket = await client.http.ws_connect(str(url))
+  File "/home/matt/.local/lib/python3.9/site-packages/discord/http.py", line 537, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 779, in _ws_connect
+    resp = await self.request(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/client.py", line 536, in _request
+    conn = await self._connector.connect(
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/home/matt/.local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [Temporary failure in name resolution]
+INFO:discord.gateway:Shard ID None session has been invalidated.
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: aa48f2a0fa00e641e6c996c069832a2e).
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.gateway:Shard ID None has successfully RESUMED session aa48f2a0fa00e641e6c996c069832a2e.
+INFO:discord.voice_client:Connecting to voice...
+INFO:discord.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:discord.voice_client:Voice handshake complete. Endpoint found newark7987.discord.media
+INFO:discord.player:ffmpeg process 3077626 successfully terminated with return code of 0.
+INFO:discord.voice_client:The voice handshake is being terminated for Channel ID 1174161405956608121 (Guild ID 891496433881055272)
+INFO:discord.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:discord.client:logging in using static token
+INFO:discord.gateway:Shard ID None has connected to Gateway (Session ID: 37b4e0a0961368fe8b1839e92ccd8b6f).
