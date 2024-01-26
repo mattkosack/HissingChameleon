@@ -219,9 +219,22 @@ async def say(ctx, voice=None, *, text=None):
         return
     
     voices = { 
-        "dracula-flow": 'SgVqBdjSh7wz8k4LdDFt',
-        "knightley": "FlfhdBnyCUhiIX7oaWOD",
-        "sally": "zGIwlqMOtWnQbmYf9sLY",
+        "dracula-flow": [
+            "SgVqBdjSh7wz8k4LdDFt",
+            VoiceSettings(stability=0.3, similarity_boost=0.7, style=0.1, use_speaker_boost=True)
+        ],
+        "Slade": [
+            "p4jjAqAwxwpAlO7aOtwN",
+            VoiceSettings(stability=0.55, similarity_boost=0.7, style=0.07, use_speaker_boost=True)
+        ],
+        "knightley": [
+            "FlfhdBnyCUhiIX7oaWOD",
+            VoiceSettings(stability=0.3, similarity_boost=1.0, style=1.0, use_speaker_boost=True)
+        ],
+        "sally": [
+            "zGIwlqMOtWnQbmYf9sLY",
+            VoiceSettings(stability=0.3, similarity_boost=1.0, style=1.0, use_speaker_boost=True)
+        ],
     }
 
     if voice.lower() not in voices.keys() or voice is None:
@@ -233,8 +246,8 @@ async def say(ctx, voice=None, *, text=None):
     audio = generate(
         text=f"{text + ' '}",
         voice=Voice(
-            voice_id=voices[voice.lower()],
-            settings=VoiceSettings(stability=0.3, similarity_boost=1.0, style=1.0, use_speaker_boost=True)
+            voice_id=voices[voice.lower()][0],
+            settings=voices[voice.lower()][1]
         )
     )
 
