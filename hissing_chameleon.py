@@ -223,7 +223,7 @@ async def say(ctx, voice=None, *, text=None):
             "SgVqBdjSh7wz8k4LdDFt",
             VoiceSettings(stability=0.3, similarity_boost=0.7, style=0.1, use_speaker_boost=True)
         ],
-        "Slade": [
+        "slade": [
             "p4jjAqAwxwpAlO7aOtwN",
             VoiceSettings(stability=0.55, similarity_boost=0.7, style=0.07, use_speaker_boost=True)
         ],
