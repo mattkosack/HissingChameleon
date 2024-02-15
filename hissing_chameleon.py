@@ -263,7 +263,7 @@ async def say(ctx, voice=None, *, text=None):
         )
     )
 
-    file = f"ai_files/{'_'.join(text.split(' '))[:12]}.mp3"
+    file = f"ai_files/{'_'.join(text.split(' '))[:12] + voice.lower()}.mp3"
     while os.path.isfile(file):
         file = file[:-4] + "_.mp3"
 
