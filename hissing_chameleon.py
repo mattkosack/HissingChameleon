@@ -263,7 +263,7 @@ async def say(ctx, voice=None, *, text=None):
         )
     )
 
-    file = f"ai_files/{'_'.join(text.split(' '))}.mp3"
+    file = f"ai_files/{'_'.join(text.split(' '))[:12]}.mp3"
     while os.path.isfile(file):
         file = file[:-4] + "_.mp3"
 
@@ -322,7 +322,7 @@ async def add_clip(ctx, name, url, start, stop):
         await ctx.send(":red_square: Clip name already exists! :red_square:")
         return
 
-    if os.path.isfile("files/" + name + ".mp3"):
+    if os.path.isfile("files/" + name[:12] + ".mp3"):
         await ctx.send(":red_square: There is already a file with that name! :red_square:")
         return
 
