@@ -30,8 +30,18 @@ async def on_message(message):
     if message.author.bot:
         return
 
+    # Only want this to apply in 2 servers
+    if message.guild.id == int(os.getenv("FRIEND_GUILD_ID")) or message.guild.id == int(os.getenv("TEST_GUILD_ID")):
+        shalla_1 = random.randint(0, 8)
+        shalla_2 = random.randint(0, 8)
+        if shalla_1 == shalla_2:
+            words = message.content.split(" ")
+            new_message = f"{words[-1]}! Shalla!"
+            await message.channel.send(file=discord.File("files/shalla.png"), content=new_message)
+
+    # Want to exclude this in one server
     if re.search(r"[Ll][^ -~]*[Uu][^ -~]*[Kk][^ -~]*[Ee]", message.content):
-        if message.guild.id == 891496433881055272:
+        if message.guild.id == int(os.getenv("FRIEND_GUILD_ID")):
             return
         else:
             await message.channel.send("I miss Luke :sob:")
@@ -72,7 +82,6 @@ async def frakes(ctx):
     if ctx.message.author.bot:
         return
 
-    print("getting line")
     await ctx.channel.send(get_line("files/frakes.txt"))
 
 
@@ -98,7 +107,6 @@ async def color(ctx, *, color=None):
     if ctx.message.author.bot:
         return
 
-    print(f"Passed Color: {color}")
     # Not sure how to write this better, I know it's ugly.
     message = None
     mode = None
@@ -263,7 +271,7 @@ async def say(ctx, voice=None, *, text=None):
         )
     )
 
-    file = f"ai_files/{'_'.join(text.split(' '))[:12] + voice.lower()}.mp3"
+    file = f"ai_files/{'_'.join(text.split(' '))[:12] + '_' + voice.lower()}.mp3"
     while os.path.isfile(file):
         file = file[:-4] + "_.mp3"
 
