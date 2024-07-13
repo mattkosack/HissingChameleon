@@ -32,8 +32,8 @@ async def on_message(message):
 
     # Only want this to apply in 2 servers
     if message.guild.id == int(os.getenv("FRIEND_GUILD_ID")) or message.guild.id == int(os.getenv("TEST_GUILD_ID")):
-        shalla_1 = random.randint(0, 8)
-        shalla_2 = random.randint(0, 8)
+        shalla_1 = random.randint(0, 4)
+        shalla_2 = random.randint(0, 4)
         if shalla_1 == shalla_2:
             words = message.content.split(" ")
             new_message = f"{words[-1]}! Shalla!"
